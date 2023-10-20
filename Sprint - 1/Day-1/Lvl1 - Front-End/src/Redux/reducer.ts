@@ -29,6 +29,7 @@ const reducer = (state = init, { type, payload }: any) => {
         ...state,
         isLoading: false,
         isError: true,
+        result: payload,
       };
     }
     case SUCCESS: {

@@ -1,5 +1,6 @@
 import * as css from "../Styles/UpperSideStyles";
 import { CHANGECURRENTTYPE, CHANGECONTEXT } from "../Redux/actionTypes";
+import { SendRequest } from "../Redux/action";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -15,22 +16,31 @@ import {
 } from "@chakra-ui/react";
 
 const UpperSide = () => {
-  const dispatch = useDispatch();
+  const dispatch: any = useDispatch();
   const isLoading = useSelector((state: any) => state.reducer.isLoading);
   const context = useSelector((state: any) => state.reducer.context);
   const currentType = useSelector((state: any) => state.reducer.currentType);
   const contentTypes = useSelector((state: any) => state.reducer.contentTypes);
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    dispatch(SendRequest(currentType, context));
+  };
 
   return (
     <Box css={css.Outer}>
-      <Box>
+      <Box css={css.TitleCss}>
         <Menu>
           <MenuButton>{currentType}</MenuButton>
-          <MenuList>
+          <MenuList bg="red">
             {contentTypes.map((item: any, ind: number) => (
               <MenuItem
+                color="black"
+                bg="pink.50"
+                _hover={{
+                  color: "grey",
+                  bg: "white",
+                }}
+                fontSize="20px"
                 onClick={() =>
                   dispatch({ type: CHANGECURRENTTYPE, payload: item })
                 }
@@ -44,8 +54,8 @@ const UpperSide = () => {
         {` Generator`}
       </Box>
 
-      <Box>
-        <InputGroup size="sm">
+      <Box css={css.InpCont}>
+        <InputGroup size={["sm", "md", "lg"]}>
           <Input
             value={context}
             onChange={(e) =>
