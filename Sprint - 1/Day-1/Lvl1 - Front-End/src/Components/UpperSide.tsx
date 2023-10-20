@@ -29,11 +29,9 @@ const UpperSide = () => {
           <MenuList>
             {contentTypes.map((item: any, ind: number) => (
               <MenuItem
-                onClick={() => {
-                  console.log("Clicked");
-
-                  dispatch({ type: CHANGECURRENTTYPE, payload: item });
-                }}
+                onClick={() =>
+                  dispatch({ type: CHANGECURRENTTYPE, payload: item })
+                }
                 key={item + ind}
               >
                 {item}
