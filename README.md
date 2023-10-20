@@ -1,6 +1,4 @@
-# GAI-B30
-
-`https://github.com/prateekshuklaps0/GAI201-B30`
+## GAI-B30 : `https://github.com/prateekshuklaps0/GAI201-B30`
 
 ### Curriculum Directory
 
