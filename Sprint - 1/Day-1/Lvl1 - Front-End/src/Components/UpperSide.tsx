@@ -1,5 +1,13 @@
 import { useReducer } from "react";
-import { Box, Text, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
 
 import * as css from "../Styles/UpperSide";
 
@@ -12,6 +20,22 @@ const UpperSide = () => {
         <Text>{contentType} Generator</Text>
 
         <Box>
+          <Menu>
+            <MenuButton>{contentType}</MenuButton>
+            <MenuList>
+              {contentTypes.map((item, ind) => (
+                <MenuItem
+                  onClick={() =>
+                    dispatch({ type: "CHANGECONTENT", payload: item })
+                  }
+                  key={item + ind}
+                >
+                  {item}
+                </MenuItem>
+              ))}
+            </MenuList>
+          </Menu>
+
           <Button>
             {isLoading ? "Generating" : "Generate"} {contentType}
           </Button>
@@ -65,3 +89,5 @@ const reducer = (state = init, action: any) => {
     }
   }
 };
+
+const contentTypes = ["Shayari", "Joke", "Story", "Quote"];
