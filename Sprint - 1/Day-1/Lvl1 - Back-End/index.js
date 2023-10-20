@@ -11,7 +11,6 @@ app.get("/shayari", async (req, res) => {
   try {
     const keyword = req.query.keyword;
     const response = await axios.post(
-      // "https://api.openai.com/v1/engines/davinci-codex/completions",
       "https://api.openai.com/v1/completions",
       {
         prompt: `Shayari about ${keyword}`,
