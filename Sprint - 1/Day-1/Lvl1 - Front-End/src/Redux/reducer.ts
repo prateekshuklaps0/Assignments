@@ -2,7 +2,7 @@ import {
   LOADING,
   ERROR,
   SUCCESS,
-  CHANGECONTENT,
+  CHANGECURRENTTYPE,
   CHANGECONTEXT,
 } from "./actionTypes";
 
@@ -15,8 +15,7 @@ export const init = {
   result: "",
 };
 
-const reducer = (state = init, action: any) => {
-  const { type, payload } = action;
+const reducer = (state = init, { type, payload }: any) => {
   switch (type) {
     case LOADING: {
       return {
@@ -39,10 +38,10 @@ const reducer = (state = init, action: any) => {
         result: payload,
       };
     }
-    case CHANGECONTENT: {
+    case CHANGECURRENTTYPE: {
       return {
         ...state,
-        contentType: payload,
+        currentType: payload,
       };
     }
     case CHANGECONTEXT: {

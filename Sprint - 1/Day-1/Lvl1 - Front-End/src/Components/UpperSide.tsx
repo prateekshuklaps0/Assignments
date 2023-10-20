@@ -1,10 +1,9 @@
 import * as css from "../Styles/UpperSideStyles";
-import { CHANGECONTENT, CHANGECONTEXT } from "../Redux/actionTypes";
+import { CHANGECURRENTTYPE, CHANGECONTEXT } from "../Redux/actionTypes";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
   Box,
-  Text,
   Button,
   Menu,
   MenuButton,
@@ -24,13 +23,17 @@ const UpperSide = () => {
 
   return (
     <Box css={css.Outer}>
-      <Text>
+      <Box>
         <Menu>
           <MenuButton>{currentType}</MenuButton>
           <MenuList>
             {contentTypes.map((item: any, ind: number) => (
               <MenuItem
-                onClick={() => dispatch({ type: CHANGECONTENT, payload: item })}
+                onClick={() => {
+                  console.log("Clicked");
+
+                  dispatch({ type: CHANGECURRENTTYPE, payload: item });
+                }}
                 key={item + ind}
               >
                 {item}
@@ -39,7 +42,7 @@ const UpperSide = () => {
           </MenuList>
         </Menu>
         Generator
-      </Text>
+      </Box>
 
       <Box>
         <InputGroup size="sm">
