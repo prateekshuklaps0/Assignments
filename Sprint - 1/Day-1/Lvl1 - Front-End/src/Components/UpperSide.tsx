@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
   Box,
   Text,
@@ -15,91 +15,54 @@ import {
 import * as css from "../Styles/UpperSide";
 
 const UpperSide = () => {
-  const [{ isLoading, contentType }, dispatch] = useReducer(reducer, init);
+  const dispatch = useDispatch();
+  const isLoading = useSelector((state: any) => state.reducer.isLoading);
+  const context = useSelector((state: any) => state.reducer.context);
+  const currentType = useSelector((state: any) => state.reducer.currentType);
+  const contentTypes = useSelector((state: any) => state.reducer.contentTypes);
 
   return (
     <Box css={css.Outer}>
-      <Box>
-        <Text>
-          <Menu>
-            <MenuButton>{contentType}</MenuButton>
-            <MenuList>
-              {contentTypes.map((item, ind) => (
-                <MenuItem
-                  onClick={() =>
-                    dispatch({ type: "CHANGECONTENT", payload: item })
-                  }
-                  key={item + ind}
-                >
-                  {item}
-                </MenuItem>
-              ))}
-            </MenuList>
-          </Menu>
-          Generator
-        </Text>
+      <Text>
+        <Menu>
+          <MenuButton>{currentType}</MenuButton>
+          <MenuList>
+            {contentTypes.map((item: any, ind: number) => (
+              <MenuItem
+                onClick={() =>
+                  dispatch({ type: "CHANGECONTENT", payload: item })
+                }
+                key={item + ind}
+              >
+                {item}
+              </MenuItem>
+            ))}
+          </MenuList>
+        </Menu>
+        Generator
+      </Text>
 
-        <Box>
-          <InputGroup size="sm">
-            <Input placeholder="Context" />
-            <InputRightAddon
-              as={Button}
-              children={
-                isLoading
-                  ? `Processing ${contentType}`
-                  : `Generate ${contentType}`
-              }
-            />
-          </InputGroup>
-        </Box>
+      <Box>
+        <InputGroup size="sm">
+          <Input
+            value={context}
+            onChange={(e) =>
+              dispatch({ type: "CHANGECONTEXT", payload: e.target.value })
+            }
+            placeholder="Context"
+          />
+          <InputRightAddon
+            as={Button}
+            children={
+              isLoading
+                ? `Processing ${currentType}`
+                : `Generate ${currentType}`
+            }
+          />
+        </InputGroup>
       </Box>
     </Box>
   );
 };
 
 export default UpperSide;
-
-const init = {
-  isLoading: false,
-  isError: false,
-  contentType: "Shayari",
-  result: "",
-};
-
-const reducer = (state = init, action: any) => {
-  const { type, payload } = action;
-  switch (type) {
-    case "LOADING": {
-      return {
-        ...state,
-        isLoading: true,
-        isError: false,
-      };
-    }
-    case "ERROR": {
-      return {
-        ...state,
-        isLoading: false,
-        isError: true,
-      };
-    }
-    case "SUCCESS": {
-      return {
-        ...state,
-        isLoading: false,
-        result: payload,
-      };
-    }
-    case "CHANGECONTENT": {
-      return {
-        ...state,
-        contentType: payload,
-      };
-    }
-    default: {
-      return init;
-    }
-  }
-};
-
-const contentTypes = ["Shayari", "Joke", "Story", "Quote"];
