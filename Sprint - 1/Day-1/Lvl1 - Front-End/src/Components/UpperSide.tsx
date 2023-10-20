@@ -21,6 +21,8 @@ const UpperSide = () => {
   const currentType = useSelector((state: any) => state.reducer.currentType);
   const contentTypes = useSelector((state: any) => state.reducer.contentTypes);
 
+  const handleSubmit = () => {};
+
   return (
     <Box css={css.Outer}>
       <Box>
@@ -39,7 +41,7 @@ const UpperSide = () => {
             ))}
           </MenuList>
         </Menu>
-        Generator
+        {` Generator`}
       </Box>
 
       <Box>
@@ -53,6 +55,8 @@ const UpperSide = () => {
           />
           <InputRightAddon
             as={Button}
+            isDisabled={context == ""}
+            onClick={handleSubmit}
             children={
               isLoading
                 ? `Processing ${currentType}`
