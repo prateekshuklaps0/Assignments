@@ -1,4 +1,12 @@
-const init = {
+import {
+  LOADING,
+  ERROR,
+  SUCCESS,
+  CHANGECONTENT,
+  CHANGECONTEXT,
+} from "./actionTypes";
+
+export const init = {
   isLoading: false,
   isError: false,
   currentType: "Shayari",
@@ -10,34 +18,34 @@ const init = {
 const reducer = (state = init, action: any) => {
   const { type, payload } = action;
   switch (type) {
-    case "LOADING": {
+    case LOADING: {
       return {
         ...state,
         isLoading: true,
         isError: false,
       };
     }
-    case "ERROR": {
+    case ERROR: {
       return {
         ...state,
         isLoading: false,
         isError: true,
       };
     }
-    case "SUCCESS": {
+    case SUCCESS: {
       return {
         ...state,
         isLoading: false,
         result: payload,
       };
     }
-    case "CHANGECONTENT": {
+    case CHANGECONTENT: {
       return {
         ...state,
         contentType: payload,
       };
     }
-    case "CHANGECONTEXT": {
+    case CHANGECONTEXT: {
       return {
         ...state,
         context: payload,

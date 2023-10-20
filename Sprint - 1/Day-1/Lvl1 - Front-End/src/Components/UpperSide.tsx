@@ -1,4 +1,5 @@
 import * as css from "../Styles/UpperSideStyles";
+import { CHANGECONTENT, CHANGECONTEXT } from "../Redux/actionTypes";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -29,9 +30,7 @@ const UpperSide = () => {
           <MenuList>
             {contentTypes.map((item: any, ind: number) => (
               <MenuItem
-                onClick={() =>
-                  dispatch({ type: "CHANGECONTENT", payload: item })
-                }
+                onClick={() => dispatch({ type: CHANGECONTENT, payload: item })}
                 key={item + ind}
               >
                 {item}
@@ -47,7 +46,7 @@ const UpperSide = () => {
           <Input
             value={context}
             onChange={(e) =>
-              dispatch({ type: "CHANGECONTEXT", payload: e.target.value })
+              dispatch({ type: CHANGECONTEXT, payload: e.target.value })
             }
             placeholder="Context"
           />
