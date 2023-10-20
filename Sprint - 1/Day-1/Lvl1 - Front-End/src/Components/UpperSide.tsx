@@ -7,6 +7,9 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  InputGroup,
+  InputRightAddon,
+  Input,
 } from "@chakra-ui/react";
 
 import * as css from "../Styles/UpperSide";
@@ -17,9 +20,7 @@ const UpperSide = () => {
   return (
     <Box css={css.Outer}>
       <Box>
-        <Text>{contentType} Generator</Text>
-
-        <Box>
+        <Text>
           <Menu>
             <MenuButton>{contentType}</MenuButton>
             <MenuList>
@@ -35,10 +36,21 @@ const UpperSide = () => {
               ))}
             </MenuList>
           </Menu>
+          Generator
+        </Text>
 
-          <Button>
-            {isLoading ? "Generating" : "Generate"} {contentType}
-          </Button>
+        <Box>
+          <InputGroup size="sm">
+            <Input placeholder="Context" />
+            <InputRightAddon
+              as={Button}
+              children={
+                isLoading
+                  ? `Processing ${contentType}`
+                  : `Generate ${contentType}`
+              }
+            />
+          </InputGroup>
         </Box>
       </Box>
     </Box>
