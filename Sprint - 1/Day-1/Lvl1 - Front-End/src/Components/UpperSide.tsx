@@ -1,3 +1,5 @@
+import * as css from "../Styles/UpperSideStyles";
+
 import { useDispatch, useSelector } from "react-redux";
 import {
   Box,
@@ -11,8 +13,6 @@ import {
   InputRightAddon,
   Input,
 } from "@chakra-ui/react";
-
-import * as css from "../Styles/UpperSide";
 
 const UpperSide = () => {
   const dispatch = useDispatch();
