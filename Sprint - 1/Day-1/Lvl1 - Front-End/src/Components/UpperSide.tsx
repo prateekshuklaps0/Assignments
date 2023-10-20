@@ -58,6 +58,10 @@ const UpperSide = () => {
         <InputGroup size={["sm", "md", "lg"]}>
           <Input
             value={context}
+            _placeholder={{
+              color: "white",
+              fontSize: "18px",
+            }}
             onChange={(e) =>
               dispatch({ type: CHANGECONTEXT, payload: e.target.value })
             }

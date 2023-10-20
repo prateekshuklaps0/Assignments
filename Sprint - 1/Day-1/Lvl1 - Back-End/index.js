@@ -1,8 +1,10 @@
 const express = require("express");
 const axios = require("axios");
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
+app.use(cors());
 const port = process.env.PORT || 8080;
 
 app.use(express.json());
@@ -25,8 +27,7 @@ app.get("/shayari", async (req, res) => {
       },
       {
         headers: {
-          // Authorization: `Bearer ${process.env.API_KEY}`,
-          // Authorization: `Bearer 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`,
+          Authorization: `Bearer ${process.env.API_KEY}`,
           "Content-Type": "application/json",
         },
       }
@@ -39,7 +40,7 @@ app.get("/shayari", async (req, res) => {
       "Error:",
       error.response.data ? error.response.data : "Something Went Wrong"
     );
-    res.status(500).json({ error: "Something Went Wrong" });
+    res.status(500).json({ error: error?.response?.data?.error?.message });
   }
 });
 

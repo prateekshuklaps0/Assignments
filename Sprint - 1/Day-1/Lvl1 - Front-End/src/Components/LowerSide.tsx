@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const LowerSide = () => {
   const result = useSelector((state: any) => state.reducer.result);
 
-  return <Box css={css.Outer}>{result}</Box>;
+  return result != "" ? <Box css={css.Outer}>{result}</Box> : <Box></Box>;
 };
 
 export default LowerSide;
