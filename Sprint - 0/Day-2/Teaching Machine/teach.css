@@ -26,16 +26,32 @@ body {
 
 #Title {
   color: white;
-  font-size: 24px;
+  font-size: 30px;
   font-family: var(--familyA);
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+  }
 }
 
 #visibleText {
+  display: none;
+  display: block;
   margin: auto;
-  border: 2px solid red;
+  border: 1px solid red;
+  border: 1px solid greenyellow;
   border-radius: 10px;
-  padding: 30px;
-  width: 250px;
+  padding: 20px 40px;
+  width: fit-content;
+  color: white;
+  font-family: var(--familyA);
+  font-size: 20px;
+}
+
+#visibleText span {
+  font-family: var(--familyA);
+  font-size: 24px;
 }
 
 #parentFrame {
@@ -48,15 +64,17 @@ body {
 
   margin: auto;
   width: auto;
-  height: 100dvh;
 
   /* @media (max-width: 768px) {
     width: 100px;
   } */
 }
 
+/* #canvas {
+  width: 400px;
+  height: 400px;
+} */
+
 #bgImg {
   width: 300px;
-  position: absolute;
-  margin-top: -100px;
 }

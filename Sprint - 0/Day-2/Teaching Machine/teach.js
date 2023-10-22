@@ -1,12 +1,12 @@
-const button = document.getElementById("startBtn");
-button.addEventListener("click", function () {
+const startBtn = document.getElementById("startBtn");
+const visibleText = document.getElementById("visibleText");
+
+startBtn.addEventListener("click", function () {
   init();
 });
 
 // More API functions here: https://teachablemachine.withgoogle.com/models/0-BqYekki/
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
-
-const visibleText = document.getElementById("visibleText");
 
 // the link to your model provided by Teachable Machine export panel
 
@@ -33,14 +33,16 @@ async function init() {
 
   // append/get elements to the DOM
   const canvas = document.getElementById("canvas");
-  canvas.width = size;
-  canvas.height = size;
+  // canvas.width = size;
+  //   canvas.height = size;
   ctx = canvas.getContext("2d");
   labelContainer = document.getElementById("label-container");
   for (let i = 0; i < maxPredictions; i++) {
     // and class labels
     labelContainer.appendChild(document.createElement("div"));
   }
+
+  visibleText.style.display = "block";
 }
 
 async function loop(timestamp) {
