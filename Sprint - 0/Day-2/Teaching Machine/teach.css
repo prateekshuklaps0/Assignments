@@ -1,3 +1,35 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+}
+
+body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #000428,
+    #004e92
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #000428,
+    #004e92
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+:root {
+  --main-color: #007bff;
+  --font-size: 16px;
+  --familyA: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Title {
+  color: white;
+  font-size: 24px;
+  font-family: var(--familyA);
+}
+
 #visibleText {
   margin: auto;
   border: 2px solid red;

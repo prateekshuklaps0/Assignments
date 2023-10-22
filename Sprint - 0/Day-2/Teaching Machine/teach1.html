@@ -7,20 +7,17 @@
     <link rel="stylesheet" href="./teach.css" />
   </head>
   <body>
-    <div>Teachable Machine Pose Model</div>
+    <h1 id="Title">Camera Position Checker</h1>
     <button type="button" id="startBtn">Start</button>
     <div id="parentFrame">
       <div><canvas id="canvas"></canvas></div>
       <div id="label-container"></div>
       <img id="bgImg" src="./bg1.png" alt="" />
     </div>
-
     <div id="visibleText"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
-
     <script src="./teach.js"></script>
-    <script type="text/javascript"></script>
   </body>
 </html>
