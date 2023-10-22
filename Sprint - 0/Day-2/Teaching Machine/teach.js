@@ -6,11 +6,10 @@ startBtn.addEventListener("click", function () {
   init();
 });
 
-// More API functions here: https://teachablemachine.withgoogle.com/models/0-BqYekki/
+// More API functions here:
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
 // the link to your model provided by Teachable Machine export panel
-
 const URL = "https://teachablemachine.withgoogle.com/models/0-BqYekki/";
 let model, webcam, ctx, labelContainer, maxPredictions;
 
@@ -34,16 +33,14 @@ async function init() {
 
   // append/get elements to the DOM
   const canvas = document.getElementById("canvas");
-  // canvas.width = size;
-  //   canvas.height = size;
+  canvas.width = size;
+  canvas.height = size;
   ctx = canvas.getContext("2d");
   labelContainer = document.getElementById("label-container");
   for (let i = 0; i < maxPredictions; i++) {
     // and class labels
     labelContainer.appendChild(document.createElement("div"));
   }
-
-  visibleText.style.display = "block";
 }
 
 async function loop(timestamp) {
@@ -59,22 +56,12 @@ async function predict() {
   // Prediction 2: run input through teachable machine classification model
   const prediction = await model.predict(posenetOutput);
 
-  // for (let i = 0; i < maxPredictions; i++) {
-  //   const classPrediction =
-  //     prediction[i].className +
-  //     ": " +
-  //     prediction[i].probability.toFixed(2);
-  //   labelContainer.childNodes[i].innerHTML = classPrediction;
-  // }
-  if (prediction[1].probability.toFixed(1) >= 0.5) {
-    visibleText.innerText = "Bad";
-    visibleText.style.border = "1px solid red";
-    spanText.style.color = "red";
-  } else {
-    visibleText.innerText = "Good";
-    visibleText.style.border = "1px solid greenyellow";
-    spanText.style.color = "greenyellow";
+  for (let i = 0; i < maxPredictions; i++) {
+    const classPrediction =
+      prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+    labelContainer.childNodes[i].innerHTML = classPrediction;
   }
+
   // finally draw the poses
   drawPose(pose);
 }
