@@ -9,7 +9,7 @@ export const SendRequest =
     console.log("Started");
 
     axios({
-      url: import.meta.env.VITE_API || "http://localhost:8080/shayari",
+      url: `${import.meta.env.VITE_API}/shayari`,
       method: "get",
       params: { content, keyword },
     })
