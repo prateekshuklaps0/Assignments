@@ -28,65 +28,34 @@ body {
   color: white;
   font-size: 30px;
   font-family: var(--familyA);
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 
   @media (max-width: 768px) {
   }
 }
 
 #visibleText {
-  display: none;
-  display: block;
-  margin: auto;
   border: 1px solid red;
   border: 1px solid greenyellow;
-  border-radius: 10px;
-  padding: 20px 40px;
-  width: fit-content;
   color: white;
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  padding: 8px 20px;
+  width: 200px;
   font-family: var(--familyA);
   font-size: 20px;
 }
 
 #visibleText span {
   font-family: var(--familyA);
-  font-size: 24px;
-}
-
-#visibleText span {
-  font-family: var(--familyA);
-  font-size: 24px;
-}
-
-#visibleText span {
-  font-family: var(--familyA);
-  font-size: 24px;
-}
-
-#visibleText span {
-  font-family: var(--familyA);
-  font-size: 24px;
-  /* background-image: url(./bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; 
-  background-size: cover; */
-
-  /* background-image: url(./bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; 
-  background-size: cover; */
-
-  /* background-image: url(./bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; 
-  background-size: cover; */
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 #parentFrame {

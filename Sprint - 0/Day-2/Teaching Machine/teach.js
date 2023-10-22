@@ -1,5 +1,6 @@
 const startBtn = document.getElementById("startBtn");
 const visibleText = document.getElementById("visibleText");
+const spanText = document.getElementById("#visibleText span");
 
 startBtn.addEventListener("click", function () {
   init();
