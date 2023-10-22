@@ -40,6 +40,12 @@ body {
     margin-top: 30px;
     margin-bottom: 35px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 26px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
 }
 
 #BtnAndStatusCont {
@@ -53,6 +59,11 @@ body {
   @media (max-width: 768px) {
     width: 350px;
     margin-bottom: 40px;
+  }
+
+  @media (max-width: 480px) {
+    width: 290px;
+    margin-bottom: 70px;
   }
 }
 
@@ -73,9 +84,9 @@ body {
   }
 
   @media (max-width: 480px) {
-    border-radius: 5px;
-    padding: 8.5px 17.5px;
-    font-size: 16px;
+    border-radius: 4px;
+    padding: 8px 17px;
+    font-size: 15px;
   }
 }
 
@@ -97,16 +108,16 @@ body {
 
   @media (max-width: 768px) {
     border-radius: 8px;
-    padding: 7px 17.5px;
+    padding: 4px 17.5px;
     width: 180px;
     font-size: 18px;
   }
 
   @media (max-width: 480px) {
-    border-radius: 8px;
-    padding: 7px 17.5px;
-    width: 180px;
-    font-size: 18px;
+    border-radius: 6px;
+    padding: 3.5px 15px;
+    width: 165px;
+    font-size: 16px;
   }
 }
 
@@ -115,17 +126,48 @@ body {
   font-family: var(--familyA);
   font-size: 26px;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 21px;
+    font-weight: 500;
+  }
 }
 
 #parentFrame {
   background-color: var(--wallColor);
+  border: 8px solid var(--main-color);
   margin: auto;
   width: 750px;
   border-radius: 15px;
-  border: 8px solid var(--main-color);
 
   @media (max-width: 768px) {
     width: 460px;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 480px) {
+    border: 6px solid var(--main-color);
+    width: 330px;
+    border-radius: 10px;
+  }
+}
+
+#parentFrame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+
+  @media (max-width: 768px) {
+    border-radius: 13px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 11px;
   }
 }
 
@@ -147,27 +189,20 @@ body {
     margin-left: 98px;
     border-radius: 8px;
   }
+
+  @media (max-width: 480px) {
+    border: 5px solid var(--colorC);
+    width: 100px;
+    height: 100px;
+    margin-top: 7px;
+    margin-left: 70px;
+    border-radius: 6px;
+  }
 }
 
 #canvasContainer canvas {
-  /* border-radius: 10px; */
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
   }
-}
-
-#parentFrame img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-
-/* #canvas {
-  width: 400px;
-  height: 400px;
-} */
-
-#bgImg {
-  width: 300px;
 }
