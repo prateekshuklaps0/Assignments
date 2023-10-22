@@ -20,6 +20,9 @@ body {
 
 :root {
   --main-color: #007bff;
+  --colorA: #1627c2;
+  --colorB: #2c3dd6;
+  --wallColor: #dae1e7;
   --font-size: 16px;
   --familyA: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -35,15 +38,35 @@ body {
   }
 }
 
-#visibleText {
-  /* border: 1px solid red;
-  border: 1px solid greenyellow; */
-  color: white;
-  display: none;
+#BtnAndStatusCont {
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+#BtnAndStatusCont button {
+  border: none;
+  background-color: var(--colorA);
+  color: white;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: var(--familyA);
+  cursor: pointer;
+}
+
+#BtnAndStatusCont button:hover {
+  background-color: var(--colorB);
+}
+
+#visibleText {
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
   padding: 8px 20px;
   width: 200px;
@@ -55,23 +78,32 @@ body {
   font-family: var(--familyA);
   font-size: 26px;
   font-weight: 500;
-  margin-left: 5px;
 }
 
 #parentFrame {
-  /* background-image: url(./bg1.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover; 
-  background-size: cover; */
-
+  background-color: var(--wallColor);
   margin: auto;
-  width: auto;
+  width: 750px;
+  border-radius: 15px;
+  border: 8px solid var(--main-color);
 
   /* @media (max-width: 768px) {
     width: 100px;
   } */
+}
+
+#parentFrame canvas {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -200px;
+  border-radius: 10px;
+  border: 10px solid grey;
+}
+
+#parentFrame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 /* #canvas {

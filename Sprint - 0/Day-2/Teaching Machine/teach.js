@@ -1,6 +1,10 @@
 const startBtn = document.getElementById("startBtn");
 const visibleText = document.getElementById("visibleText");
-const spanText = document.getElementById("#visibleText span");
+const spanText = document.querySelector("#visibleText span");
+
+window.addEventListener("load", () => {
+  init();
+});
 
 startBtn.addEventListener("click", function () {
   init();
@@ -41,6 +45,8 @@ async function init() {
     // and class labels
     labelContainer.appendChild(document.createElement("div"));
   }
+
+  visibleText.style.display = "flex";
 }
 
 async function loop(timestamp) {
@@ -56,10 +62,20 @@ async function predict() {
   // Prediction 2: run input through teachable machine classification model
   const prediction = await model.predict(posenetOutput);
 
-  for (let i = 0; i < maxPredictions; i++) {
-    const classPrediction =
-      prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-    labelContainer.childNodes[i].innerHTML = classPrediction;
+  //   for (let i = 0; i < maxPredictions; i++) {
+  //     const classPrediction =
+  //       prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+  //     labelContainer.childNodes[i].innerHTML = classPrediction;
+  //   }
+
+  if (prediction[1].probability.toFixed(1) >= 0.5) {
+    spanText.innerText = "Poor";
+    visibleText.style.border = "1px solid red";
+    spanText.style.color = "red";
+  } else {
+    spanText.innerText = "Good";
+    visibleText.style.border = "1px solid greenyellow";
+    spanText.style.color = "greenyellow";
   }
 
   // finally draw the poses
