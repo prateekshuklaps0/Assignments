@@ -1,21 +1,34 @@
 const startBtn = document.getElementById("startBtn");
 const visibleText = document.getElementById("visibleText");
 const spanText = document.querySelector("#visibleText span");
+const canvas = document.getElementById("canvas");
 
-window.addEventListener("load", () => {
-  init();
-});
+const URL = "https://teachablemachine.withgoogle.com/models/0-BqYekki/";
+let model, webcam, ctx, labelContainer, maxPredictions;
 
-startBtn.addEventListener("click", function () {
-  init();
+// window.addEventListener("load", () => {
+//   init();
+// });
+
+startBtn.addEventListener("click", async function () {
+  if (startBtn.innerText == "Start") {
+    startBtn.innerText = "Starting";
+    init();
+  }
+  if (startBtn.innerText == "Stop") {
+    await webcam.stop();
+    canvas.style.display = "none";
+    spanText.innerText = "Off";
+    startBtn.innerText = "Start";
+    visibleText.style.border = "1px solid grey";
+    spanText.style.color = "grey";
+  }
 });
 
 // More API functions here:
 // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
 // the link to your model provided by Teachable Machine export panel
-const URL = "https://teachablemachine.withgoogle.com/models/0-BqYekki/";
-let model, webcam, ctx, labelContainer, maxPredictions;
 
 async function init() {
   const modelURL = URL + "model.json";
@@ -36,7 +49,7 @@ async function init() {
   window.requestAnimationFrame(loop);
 
   // append/get elements to the DOM
-  const canvas = document.getElementById("canvas");
+
   canvas.width = size;
   canvas.height = size;
   ctx = canvas.getContext("2d");
@@ -46,7 +59,8 @@ async function init() {
     labelContainer.appendChild(document.createElement("div"));
   }
 
-  visibleText.style.display = "flex";
+  canvas.style.display = "block";
+  startBtn.innerText = "Stop";
 }
 
 async function loop(timestamp) {
@@ -68,18 +82,19 @@ async function predict() {
   //     labelContainer.childNodes[i].innerHTML = classPrediction;
   //   }
 
-  if (prediction[1].probability.toFixed(1) >= 0.5) {
-    spanText.innerText = "Poor";
-    visibleText.style.border = "1px solid red";
-    spanText.style.color = "red";
-  } else {
-    spanText.innerText = "Good";
-    visibleText.style.border = "1px solid greenyellow";
-    spanText.style.color = "greenyellow";
+  if (startBtn.innerText == "Stop") {
+    if (prediction[1].probability.toFixed(1) >= 0.5) {
+      spanText.innerText = "Poor";
+      visibleText.style.border = "1px solid red";
+      spanText.style.color = "red";
+    } else {
+      spanText.innerText = "Good";
+      visibleText.style.border = "1px solid greenyellow";
+      spanText.style.color = "greenyellow";
+    }
   }
-
-  // finally draw the poses
   drawPose(pose);
+  // finally draw the poses
 }
 
 function drawPose(pose) {

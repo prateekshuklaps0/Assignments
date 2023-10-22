@@ -22,6 +22,7 @@ body {
   --main-color: #007bff;
   --colorA: #1627c2;
   --colorB: #2c3dd6;
+  --colorC: grey;
   --wallColor: #dae1e7;
   --font-size: 16px;
   --familyA: Verdana, Geneva, Tahoma, sans-serif;
@@ -29,12 +30,15 @@ body {
 
 #Title {
   color: white;
-  font-size: 30px;
   font-family: var(--familyA);
+  font-size: 30px;
   margin-top: 25px;
   margin-bottom: 30px;
 
   @media (max-width: 768px) {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 35px;
   }
 }
 
@@ -45,17 +49,34 @@ body {
   justify-content: space-between;
   width: 400px;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    width: 350px;
+    margin-bottom: 40px;
+  }
 }
 
 #BtnAndStatusCont button {
   border: none;
-  background-color: var(--colorA);
+  cursor: pointer;
   color: white;
+  background-color: var(--colorA);
+  font-family: var(--familyA);
   border-radius: 6px;
   padding: 10px 20px;
   font-size: 18px;
-  font-family: var(--familyA);
-  cursor: pointer;
+
+  @media (max-width: 768px) {
+    border-radius: 5px;
+    padding: 8.5px 17.5px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 5px;
+    padding: 8.5px 17.5px;
+    font-size: 16px;
+  }
 }
 
 #BtnAndStatusCont button:hover {
@@ -64,17 +85,33 @@ body {
 
 #visibleText {
   color: white;
-  display: none;
+  border: 1px solid var(--colorC);
+  font-family: var(--familyA);
+  display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
   padding: 8px 20px;
   width: 200px;
-  font-family: var(--familyA);
   font-size: 20px;
+
+  @media (max-width: 768px) {
+    border-radius: 8px;
+    padding: 7px 17.5px;
+    width: 180px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 8px;
+    padding: 7px 17.5px;
+    width: 180px;
+    font-size: 18px;
+  }
 }
 
 #visibleText span {
+  color: var(--colorC);
   font-family: var(--familyA);
   font-size: 26px;
   font-weight: 500;
@@ -87,17 +124,37 @@ body {
   border-radius: 15px;
   border: 8px solid var(--main-color);
 
-  /* @media (max-width: 768px) {
-    width: 100px;
-  } */
+  @media (max-width: 768px) {
+    width: 460px;
+  }
 }
 
-#parentFrame canvas {
+#canvasContainer {
   position: absolute;
-  margin-top: 30px;
-  margin-left: -200px;
+  background-color: black;
+  border: 10px solid var(--colorC);
+  width: 220px;
+  height: 220px;
+  margin-top: 20px;
+  margin-left: 160px;
   border-radius: 10px;
-  border: 10px solid grey;
+
+  @media (max-width: 768px) {
+    border: 8px solid var(--colorC);
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 98px;
+    border-radius: 8px;
+  }
+}
+
+#canvasContainer canvas {
+  /* border-radius: 10px; */
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #parentFrame img {
