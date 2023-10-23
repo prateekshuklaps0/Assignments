@@ -9,7 +9,16 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json());
 
-app.get("/shayari", async (req, res) => {
+// Home Route
+app.get("/", async (req, res) => {
+  try {
+    res.status(200).json({ msg: "Welcome to Homepage." });
+  } catch (error) {
+    res.status(500).json({ msg: "Homepage Error", error });
+  }
+});
+
+app.get("/get", async (req, res) => {
   try {
     const { content, keyword } = req.query;
 
