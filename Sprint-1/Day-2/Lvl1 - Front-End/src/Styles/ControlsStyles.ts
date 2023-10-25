@@ -25,6 +25,23 @@ export const ControlsCont = css`
   @media (max-width: 480px) {
   }
 `;
+export const MenuitemsCss = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
+`;
 
 /*
 
