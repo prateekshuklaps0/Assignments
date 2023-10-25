@@ -2,32 +2,34 @@ import * as css from "../Styles/EditorStyles";
 
 import { useRef } from "react";
 import { Box } from "@chakra-ui/react";
-import Editor from "@monaco-editor/react";
+import Editor, { DiffEditor } from "@monaco-editor/react";
 
 const CodeEditor = () => {
-  const editorRef: any = useRef(null);
+  const diffEditorRef: any = useRef(null);
 
-  function handleEditorDidMount(editor: any, monaco: any) {
-    editorRef.current = editor;
+  // function handleEditorDidMount(editor: any, monaco: any) {
+  //   diffEditorRef.current = editor;
+  // }
+
+  function showOriginalValue() {
+    alert(diffEditorRef.current.getOriginalEditor().getValue());
   }
 
-  function showValue() {
-    alert(editorRef.current.getValue());
-  }
-
-  function handleEditorChange(value, event) {
-    console.log("here is the current model value:", value);
+  function showModifiedValue() {
+    alert(diffEditorRef.current.getModifiedEditor().getValue());
   }
 
   return (
     <Box css={css.Outer}>
-      <button onClick={showValue}>Show value</button>
+      <button onClick={showOriginalValue}>show original value</button>
+      <button onClick={showModifiedValue}>show modified value</button>
       <Editor
-        height="90vh"
+        height="200px"
+        language="javascript"
         defaultLanguage="javascript"
         defaultValue="// some comment"
-        onMount={handleEditorDidMount}
-        onChange={handleEditorChange}
+        // modified="// the modified code"
+        // onMount={handleEditorDidMount}
       />
     </Box>
   );
