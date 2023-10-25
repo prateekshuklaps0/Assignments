@@ -31,8 +31,12 @@ app.get("/get", async (req, res) => {
             content: `Do not give any explaination, just give a ${content} including or related to ${keyword} in hindi and english.`,
           },
         ],
-        max_tokens: 3500,
         model: "gpt-3.5-turbo",
+        max_tokens: 3500,
+        temperature: 1,
+        top_p: 1,
+        frequency_penalty: 0,
+        presence_penalty: 0,
       },
       {
         headers: {
