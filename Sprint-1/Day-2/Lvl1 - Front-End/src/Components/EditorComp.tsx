@@ -2,7 +2,7 @@ import * as css from "../Styles/EditorStyles";
 
 import { useRef } from "react";
 import { Box } from "@chakra-ui/react";
-import Editor, { DiffEditor } from "@monaco-editor/react";
+import Editor from "@monaco-editor/react";
 
 const CodeEditor = () => {
   const diffEditorRef: any = useRef(null);
