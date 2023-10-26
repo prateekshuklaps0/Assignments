@@ -1,5 +1,5 @@
-import { Task } from "../models/Task";
-import { TaskManager } from "../models/TaskManager";
+import { Task } from "../models/task";
+import { TaskManager } from "../models/taskManager";
 
 export class TaskService {
   private taskManager: TaskManager;

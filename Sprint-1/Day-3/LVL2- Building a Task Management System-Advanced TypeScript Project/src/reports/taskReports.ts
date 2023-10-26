@@ -3,19 +3,35 @@ import { Task } from "../models/task";
 export class TaskReport {
   constructor(private tasks: Task[]) {}
 
-  getCompletedTaskCount() {
-    // Implement logic to count completed tasks
+  getCompletedTaskCount(): number {
+    return this.tasks.filter((task) => task.isCompleted).length;
   }
 
-  getPendingTaskCount() {
-    // Implement logic to count pending tasks
+  getPendingTaskCount(): number {
+    return this.tasks.filter((task) => !task.isCompleted).length;
   }
 
-  getTasksDueToday() {
-    // Implement logic to find tasks due today
+  getTasksDueToday(): Task[] {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    return this.tasks.filter((task) => {
+      // Compare dueDate with today
+      return (
+        task.dueDate.getDate() === today.getDate() &&
+        task.dueDate.getMonth() === today.getMonth() &&
+        task.dueDate.getFullYear() === today.getFullYear()
+      );
+    });
   }
 
-  getOverdueTasks() {
-    // Implement logic to find overdue tasks
+  getOverdueTasks(): Task[] {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    return this.tasks.filter((task) => {
+      // Compare dueDate with today (tasks that are overdue)
+      return task.dueDate < today && !task.isCompleted;
+    });
   }
 }
