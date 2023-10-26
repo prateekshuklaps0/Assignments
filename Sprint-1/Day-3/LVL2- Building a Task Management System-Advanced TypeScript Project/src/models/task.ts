@@ -7,14 +7,14 @@ export class Task {
   ) {}
 
   updateTitle(newTitle: string) {
-    // Implement title update logic
+    this.title = newTitle;
   }
 
   updateDescription(newDescription: string) {
-    // Implement description update logic
+    this.description = newDescription;
   }
 
   markAsCompleted() {
-    // Implement logic to mark the task as completed
+    this.isCompleted = true;
   }
 }
