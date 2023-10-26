@@ -69,10 +69,10 @@ class BankAccount {
 }
 
 // Usage
-const myAccount = new BankAccount("12345", "John Doe", 1000);
+const Person = new BankAccount("12345", "John Doe", 1000);
 
-console.log(`Account holder: ${myAccount.getBalance()}`);
-myAccount.deposit(500);
-myAccount.withdraw(200);
-myAccount.withdraw(1500); // Attempt to withdraw more than the balance
-myAccount.displayTransactions();
+console.log(`Account holder: ${Person.getBalance()}`);
+Person.deposit(500);
+Person.withdraw(200);
+Person.withdraw(1500); // Attempt to withdraw more than the balance
+Person.displayTransactions();
