@@ -1,78 +1,52 @@
-// Define the Transaction interface
 interface Transaction {
-  type: "deposit" | "withdraw";
+  type: string;
   amount: number;
   timestamp: Date;
 }
 
-// Define the BankAccount class
 class BankAccount {
-  private accountNumber: string;
-  private accountHolder: string;
-  private balance: number;
-  private transactions: Transaction[] = [];
-
   constructor(
-    accountNumber: string,
-    accountHolder: string,
-    initialBalance: number
-  ) {
-    this.accountNumber = accountNumber;
-    this.accountHolder = accountHolder;
-    this.balance = initialBalance;
+    public accountNumber: string,
+    public accountHolder: string,
+    public balance: number
+  ) {}
+
+  deposit(amount: number) {
+    this.balance += amount;
+    this.transactions.push({
+      type: "deposit",
+      amount,
+      timestamp: new Date(),
+    });
   }
 
-  deposit(amount: number): void {
-    if (amount > 0) {
-      this.balance += amount;
-      const transaction: Transaction = {
-        type: "deposit",
-        amount: amount,
-        timestamp: new Date(),
-      };
-      this.transactions.push(transaction);
-      console.log(`Deposited $${amount}. New balance: $${this.balance}`);
-    } else {
-      console.log("Invalid deposit amount.");
+  withdraw(amount: number) {
+    if (amount > this.balance) {
+      throw new Error("Insufficient funds.");
     }
+
+    this.balance -= amount;
+    this.transactions.push({
+      type: "withdraw",
+      amount,
+      timestamp: new Date(),
+    });
   }
 
-  withdraw(amount: number): void {
-    if (amount > 0 && amount <= this.balance) {
-      this.balance -= amount;
-      const transaction: Transaction = {
-        type: "withdraw",
-        amount: amount,
-        timestamp: new Date(),
-      };
-      this.transactions.push(transaction);
-      console.log(`Withdrawn $${amount}. New balance: $${this.balance}`);
-    } else {
-      console.log("Invalid withdrawal amount or insufficient balance.");
-    }
-  }
-
-  getBalance(): number {
+  getBalance() {
     return this.balance;
   }
 
-  displayTransactions(): void {
-    console.log("Transaction history:");
-    this.transactions.forEach((transaction, index) => {
-      console.log(
-        `#${index + 1}: ${transaction.type} of $${transaction.amount} on ${
-          transaction.timestamp
-        }`
-      );
-    });
-  }
+  transactions: Transaction[] = [];
 }
 
-// Usage
-const Person = new BankAccount("12345", "John Doe", 1000);
+const bankAccount = new BankAccount("1234567890", "John Doe", 1000);
 
-console.log(`Account holder: ${Person.getBalance()}`);
-Person.deposit(500);
-Person.withdraw(200);
-Person.withdraw(1500); // Attempt to withdraw more than the balance
-Person.displayTransactions();
+// Deposit $500 into the account.
+bankAccount.deposit(500);
+
+// Withdraw $200 from the account.
+bankAccount.withdraw(200);
+
+// Display the current account balance.
+console.log(bankAccount.getBalance()); // 800
