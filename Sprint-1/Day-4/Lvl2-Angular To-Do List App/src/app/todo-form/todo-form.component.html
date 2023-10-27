@@ -1,1 +1,19 @@
-<p>todo-form works!</p>
+<form (ngSubmit)="addTask()">
+  <label for="title">Title:</label>
+  <input
+    type="text"
+    id="title"
+    name="title"
+    [(ngModel)]="newTask.title"
+    required
+  />
+
+  <label for="description">Description:</label>
+  <textarea
+    id="description"
+    name="description"
+    [(ngModel)]="newTask.description"
+  ></textarea>
+
+  <button type="submit">Add Task</button>
+</form>
