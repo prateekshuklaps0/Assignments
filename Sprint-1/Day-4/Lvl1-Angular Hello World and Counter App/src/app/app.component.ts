@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <div>
+    <div id="Cont">
       <h1>Hello, World!</h1>
-      <p>Counter: {{ counter }}</p>
-      <button (click)="incrementCounter()">Increment</button>
+      <p class="counterVal">Counter: {{ counter }}</p>
+      <button (click)="handleClick(+1)">Increment</button>
+      <button (click)="handleClick(-counter)">Reset</button>
+      <button (click)="handleClick(-1)">Decremnet</button>
     </div>
   `,
   styleUrls: ['./app.component.css'],
@@ -14,7 +16,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   counter = 0;
 
-  incrementCounter() {
-    this.counter++;
+  handleClick(val: number) {
+    this.counter += val;
   }
 }
