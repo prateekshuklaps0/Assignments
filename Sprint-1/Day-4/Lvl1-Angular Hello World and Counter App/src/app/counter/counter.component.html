@@ -1,0 +1,8 @@
+<div id="CounterParent">
+  <div id="CounterDiv">Counter : {{ count }}</div>
+  <div id="BtnBox">
+    <button class="btns" (click)="handleClick(1)">+</button>
+    <button class="btns" (click)="handleClick(-count)">Reset</button>
+    <button class="btns" (click)="handleClick(-1)">-</button>
+  </div>
+</div>

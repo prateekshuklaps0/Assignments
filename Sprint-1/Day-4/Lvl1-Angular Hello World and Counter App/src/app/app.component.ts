@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
 
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { CounterComponent } from './counter/counter.component';
+
 @Component({
   selector: 'app-root',
   template: `
-    <div id="Cont">
-      <h1>Hello, World!</h1>
-      <p class="counterVal">Counter: {{ counter }}</p>
-      <button (click)="handleClick(+1)">Increment</button>
-      <button (click)="handleClick(-counter)">Reset</button>
-      <button (click)="handleClick(-1)">Decremnet</button>
-    </div>
+    <app-hello-world [text]="parentText"></app-hello-world>
+    <app-counter></app-counter>
   `,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  parentText = 'Hello World';
   counter = 0;
 
   handleClick(val: number) {
