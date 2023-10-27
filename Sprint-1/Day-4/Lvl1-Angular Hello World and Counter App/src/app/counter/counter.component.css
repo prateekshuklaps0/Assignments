@@ -1,0 +1,51 @@
+#CounterParent {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  margin: auto;
+  width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 50px;
+  border: 1px solid red;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+#CounterDiv {
+  color: white;
+  font-size: 28px;
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+#BtnBox {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.btns {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.inc {
+  background-color: #8ddfcb;
+}
+.inc:hover {
+  background-color: #4ce2bd;
+}
+.reset {
+  background-color: #a9c4f7;
+}
+.reset:hover {
+  background-color: #a9c4f7;
+}
+.dec {
+  background-color: #edb7ed;
+}
+.dec:hover {
+  background-color: #e9a1e9;
+}
