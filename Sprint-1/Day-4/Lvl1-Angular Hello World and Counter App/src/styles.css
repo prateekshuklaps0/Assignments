@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+}
+
+body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    /* to bottom, */ #000428,
+    #004e92
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    /* to bottom, */ #000428,
+    #004e92
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100dvh;
+}
+
+:root {
+  --main-color: #007bff;
+  --colorA: #1627c2;
+  --colorB: #2c3dd6;
+  --colorC: grey;
+  --wallColor: #dae1e7;
+  --font-size: 16px;
+  --familyA: Verdana, Geneva, Tahoma, sans-serif;
+}
