@@ -2,9 +2,19 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <div>
+      <h1>Hello, World!</h1>
+      <p>Counter: {{ counter }}</p>
+      <button (click)="incrementCounter()">Increment</button>
+    </div>
+  `,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Lvl';
+  counter = 0;
+
+  incrementCounter() {
+    this.counter++;
+  }
 }
