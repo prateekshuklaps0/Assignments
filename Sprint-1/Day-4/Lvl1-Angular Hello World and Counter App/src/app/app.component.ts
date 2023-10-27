@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { GreetingComponent } from './greeting/greeting.component';
+
 @Component({
   selector: 'app-root',
   template: `
@@ -10,6 +12,9 @@ import { Component } from '@angular/core';
       <button (click)="handleClick(-counter)">Reset</button>
       <button (click)="handleClick(-1)">Decremnet</button>
     </div>
+
+    <!-- Use GreetingComponent here -->
+    <app-greeting></app-greeting>
   `,
   styleUrls: ['./app.component.css'],
 })

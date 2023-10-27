@@ -2,9 +2,15 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-greeting',
-  templateUrl: './greeting.component.html',
-  styleUrls: ['./greeting.component.css']
+  template: `
+    <div>
+      <label for="greetingMessage">Edit Greeting: </label>
+      <input [(ngModel)]="greetingMessage" id="greetingMessage" />
+      <p>Greeting: {{ greetingMessage }}</p>
+    </div>
+  `,
+  styleUrls: ['./greeting.component.css'],
 })
 export class GreetingComponent {
-
+  greetingMessage = 'Greetings from Prateek';
 }
