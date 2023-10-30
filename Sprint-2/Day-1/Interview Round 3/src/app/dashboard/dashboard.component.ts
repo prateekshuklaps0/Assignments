@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class DashboardComponent {
   @Input() employess: any = [];
+
+  data = this.employess.map((item: any, ind: number) => 'testing');
 }
