@@ -1,21 +1,33 @@
 <div class="w-10/11 m-auto flex items-center justify-between">
   <div>
-    <select name="Sort" id="">
+    <select
+      name="Sort"
+      (ngModelChange)="changeSortBy($event)"
+      [(ngModel)]="sortBy"
+    >
+      <option value="price">Price</option>
       <option value="rating">Rating</option>
       <option value="name">Name</option>
-      <option value="price">Price</option>
     </select>
   </div>
 
   <div>
-    <select name="Order" id="">
+    <select
+      name="Order"
+      (ngModelChange)="changeOrder($event)"
+      [(ngModel)]="order"
+    >
       <option value="asc">Low - High</option>
       <option value="desc">High - Low</option>
     </select>
   </div>
 
   <div>
-    <select name="Sort" id="">
+    <select
+      name="Sort"
+      (ngModelChange)="changeCategory($event)"
+      [(ngModel)]="category"
+    >
       <option value="men">Men</option>
       <option value="women">Women</option>
       <option value="kids">Kids</option>
