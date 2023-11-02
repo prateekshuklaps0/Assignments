@@ -2,6 +2,6 @@
   <app-navbar></app-navbar>
   <app-filters></app-filters>
   <div *ngFor="let product of products">
-    <app-product-card></app-product-card>
+    <app-product-card [product]="product"></app-product-card>
   </div>
 </div>
