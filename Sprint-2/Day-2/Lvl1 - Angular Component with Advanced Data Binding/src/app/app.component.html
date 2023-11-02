@@ -1,4 +1,7 @@
 <div class="">
   <app-navbar></app-navbar>
   <app-filters></app-filters>
+  <div *ngFor="let product of products">
+    <app-product-card></app-product-card>
+  </div>
 </div>
