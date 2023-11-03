@@ -1,21 +1,31 @@
-import { AbstractControl } from '@angular/forms';
+import { FormControl, AbstractControl } from '@angular/forms';
 
-export function passwordStrengthValidator(
-  control: AbstractControl
-): { [key: string]: boolean } | null {
-  const password = control.value;
+export class PasswordValidator {
+  static matchPassword(control: FormControl): { [key: string]: any } | null {
+    const password = control.get('password');
+    const confirmPassword = control.get('confirmPassword');
 
-  if (!password) {
+    if (
+      password &&
+      confirmPassword &&
+      password.value !== confirmPassword.value
+    ) {
+      return { matchPassword: true };
+    }
+
     return null;
   }
 
-  // Define a regex pattern for password strength
-  const passwordStrengthPattern =
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+  static strong(control: FormControl): { [key: string]: any } | null {
+    const hasNumber = /\d/.test(control.value);
+    const hasUpper = /[A-Z]/.test(control.value);
+    const hasLower = /[a-z]/.test(control.value);
+    const hasSpecial = /[$@$! %*? &]/.test(control.value);
 
-  if (!passwordStrengthPattern.test(password)) {
-    return { passwordStrength: true };
+    if (!hasNumber || !hasUpper || !hasLower || !hasSpecial) {
+      return { passwordStrength: true };
+    }
+
+    return null;
   }
-
-  return null;
 }
