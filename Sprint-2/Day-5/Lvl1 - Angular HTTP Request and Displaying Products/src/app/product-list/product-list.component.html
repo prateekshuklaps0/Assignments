@@ -1,0 +1,26 @@
+<div class="productOuter">
+  <div class="container" *ngIf="this.Context.getValues().products.length">
+    <div
+      class="productsCardDiv"
+      *ngFor="let item of this.Context.getValues().products"
+    >
+      <img class="productImg" src="{{ item.image }}" alt="" />
+      <div class="contentDiv">
+        <p class="productTitle">{{ item.title }}</p>
+        <p class="productDesc">{{ item.description }}</p>
+        <div class="priceAndBtnCont">
+          <p>₹ {{ item.price }}</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="this.Context.getValues().isLoading">
+    <p class="LoadingText">Loading Products...</p>
+  </div>
+
+  <div *ngIf="this.Context.getValues().isError">
+    <p class="ErrorText">Something Went Wrong!</p>
+  </div>
+</div>
