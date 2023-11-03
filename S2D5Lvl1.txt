@@ -1,0 +1,99 @@
+Form Link - https://docs.google.com/forms/d/e/1FAIpQLSe9KJqsv6t-7C0q6gcx8VUGNfSS9HxkUH2z1K5gEyWddjejUQ/viewform
+
+Yt video link - https://youtu.be/Y_s70jJBAIU
+
+Deployed Link - https://s2d5lvl1.vercel.app/
+
+Github Link - https://github.com/prateekshuklaps0/GAI201-B30/tree/main/Sprint-2/Day-5/Lvl1%20-%20Angular%20HTTP%20Request%20and%20Displaying%20Products
+
+
+Main Promt : [ Act as Frontend Angular Developer ]
+I have to implement given below Assignment. I am already familiar with HTML, CSS and Javascript development. 
+I want to learn through chat gpt conversation. Please create a plan for me So, that I will able to complete the implementation of given below Assignment through Angular, I am inclined more towards learning through solving exercise. 
+
+Do not generate all content at once, give some content which I will read and understand then provide me exercise to solve and then move to next topic and so on. 
+
+##Problem Statement:
+"### Objective
+
+The objective of this assignment is to gain practical experience in making HTTP requests to the "Fake Store API" and presenting the retrieved product data in an attractive card format in an Angular application.
+
+### Task
+
+Your task is to build a comprehensive Angular component that retrieves product data from the "Fake Store API" and displays it in a user-friendly card format. The data from the API represents a diverse range of products.
+
+**API Endpoint:** https://fakestoreapi.com/products
+
+**Data Structure (Example):**
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Fancy Product",
+    "description": "This is a fancy product.",
+    "price": 99.99,
+    "image": "<https://fakestoreapi.com/img/1.jpg>"
+  },
+  {
+    "id": 2,
+    "title": "Awesome Product",
+    "description": "This is an awesome product.",
+    "price": 49.99,
+    "image": "<https://fakestoreapi.com/img/2.jpg>"
+  },
+  {
+    "id": 3,
+    "title": "Elegant Product",
+    "description": "This is an elegant product.",
+    "price": 79.99,
+    "image": "<https://fakestoreapi.com/img/3.jpg>"
+  }
+  // ... more products
+]
+
+```
+
+### Detailed Requirements
+
+To successfully complete this assignment, ensure the following detailed requirements are met:
+
+1. **Angular Component:**
+    - Create an Angular component dedicated to displaying product data in card format.
+    - Use the Angular CLI or your preferred Angular development setup to generate the component.
+2. **HTTP Request:**
+    - Utilize Angular's HttpClient module to make an HTTP GET request to the "Fake Store API."
+3. **Card Display:**
+    - Design the component's template to display the retrieved product data in card format, with each card including the following:
+        - Product title.
+        - Product description.
+        - Product price.
+        - An image representing the product.
+    - Use Angular's ngFor directive to dynamically iterate through the retrieved product data and generate individual cards.
+4. **Styling:**
+    - Implement CSS styles to enhance the visual presentation of the product cards, making them visually appealing and user-friendly.
+    - Consider hover effects, borders, and other CSS enhancements to improve the user experience.
+5. **Interaction:**
+    - Implement a click event handler on each card so that when a user clicks on a product card, they receive additional product details or are directed to a product details page.
+6. **Loading Indicator:**
+    - Implement a loading indicator while the data is being fetched from the API to improve user experience.
+7. **Error Handling:**
+    - Display an error message in case the API request fails. Use Angular's error handling mechanisms.
+
+### Assessment
+
+Your assignment will be assessed based on the following detailed criteria:
+
+- Successful creation of an Angular component for displaying product data in card format.
+- Accurate implementation of an HTTP GET request to the "Fake Store API" using Angular's HttpClient.
+- Proper display of the retrieved product data in card format within the component's template.
+- Appropriate styling to enhance the visual presentation of the product cards, creating an attractive and user-friendly display.
+- Functional interaction, including click event handling on product cards.
+- Implementation of a loading indicator during data retrieval.
+- Proper error handling for API request failures using Angular's mechanisms."
+
+
+
+
+
+Chat Gpt Link : https://chat.openai.com/share/90a668ca-e6f6-4167-8aa5-28a59da07e44
