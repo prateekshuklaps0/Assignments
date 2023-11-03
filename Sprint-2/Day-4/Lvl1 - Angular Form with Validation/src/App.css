@@ -3,3 +3,29 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+
+.Outer {
+  width: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: 100px;
+  background-color: aquamarine;
+}
+.Outer button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.Outer form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.Outer form div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
