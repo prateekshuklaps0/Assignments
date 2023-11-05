@@ -1,7 +1,12 @@
 import "./App.css";
+import Calendar from "./components/Calender";
 
 function App() {
-  return <>TypeScript + React</>;
+  return (
+    <>
+      <Calendar />{" "}
+    </>
+  );
 }
 
 export default App;
