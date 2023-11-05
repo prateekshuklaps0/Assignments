@@ -3,3 +3,46 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+
+/* src/Calendar.css */
+.calendar {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  min-width: 250px;
+}
+
+.note-entry {
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* src/NoteList.css */
+.note-list {
+  margin: 20px;
+}
+
+.note-card {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
