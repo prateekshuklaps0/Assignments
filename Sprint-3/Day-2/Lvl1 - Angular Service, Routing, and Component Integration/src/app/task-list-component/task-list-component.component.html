@@ -1,0 +1,13 @@
+<div>
+  <p>Task Management</p>
+  <p>with</p>
+  <p>Angular Service, Routing, and Component Integration</p>
+  <app-task-add></app-task-add>
+  <div *ngFor="let task of tasks">
+    <div>
+      {{ task.title }}
+      <button (click)="deleteTask(task.id)">Delete</button>
+      <a [routerLink]="['/task', task.id]">View Details</a>
+    </div>
+  </div>
+</div>
