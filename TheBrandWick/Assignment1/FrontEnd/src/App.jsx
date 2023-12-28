@@ -8,7 +8,7 @@ function App() {
   return (
     <Box
       id="App"
-      bgImage={`linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.486)), url(${bgImg})`}
+      bgImage={`linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.322)), url(${bgImg})`}
     >
       <LoginSignup />
     </Box>

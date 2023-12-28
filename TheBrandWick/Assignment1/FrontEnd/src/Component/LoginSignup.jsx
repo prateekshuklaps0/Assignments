@@ -6,7 +6,7 @@ import {
 } from "../Redux/ActionTypes";
 import { LOGIN, SIGNUP } from "../Redux/Action";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Box, Text, Image, Center, Button, useToast } from "@chakra-ui/react";
 import {
   FaFacebookF as FbIcon,
@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import { FaGoogle as GoogleIcon } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
+import { Vortex } from "react-loader-spinner";
 
 const LoginSignup = () => {
   const toast = useToast();
@@ -25,7 +26,6 @@ const LoginSignup = () => {
   const emailOrPhone = useSelector((state) => state.emailOrPhone);
   const isLoading = useSelector((state) => state.isLoading);
   const showLogin = useSelector((state) => state.showLogin);
-  // const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     dispatch({ type: RESETINP });
@@ -77,6 +77,7 @@ const LoginSignup = () => {
           }}
           onClick={() => dispatch({ type: TOGGLELOGINCOMPONENT })}
           css={css.ToggleBtns}
+          isDisabled={isLoading}
         >
           LOG IN
         </Button>
@@ -174,8 +175,28 @@ const LoginSignup = () => {
                 color: "orangeA",
               }}
               type="submit"
+              isDisabled={isLoading}
             >
-              {isLoading ? "SIGNING UP" : "SIGN UP"}
+              {isLoading ? (
+                <Vortex
+                  visible={true}
+                  height="40"
+                  width="40"
+                  ariaLabel="vortex-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="vortex-wrapper"
+                  colors={[
+                    "red",
+                    "green",
+                    "blue",
+                    "yellow",
+                    "orange",
+                    "purple",
+                  ]}
+                />
+              ) : (
+                "SIGN UP"
+              )}
             </Button>
           </form>
         </Box>
@@ -251,8 +272,28 @@ const LoginSignup = () => {
                 color: "orangeA",
               }}
               type="submit"
+              isDisabled={isLoading}
             >
-              {isLoading ? "LOGING IN" : "LOG IN"}
+              {isLoading ? (
+                <Vortex
+                  visible={true}
+                  height="40"
+                  width="40"
+                  ariaLabel="vortex-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="vortex-wrapper"
+                  colors={[
+                    "red",
+                    "green",
+                    "blue",
+                    "yellow",
+                    "orange",
+                    "purple",
+                  ]}
+                />
+              ) : (
+                "LOG IN"
+              )}
             </Button>
           </form>
         </Box>
@@ -278,6 +319,7 @@ const LoginSignup = () => {
           }}
           onClick={() => dispatch({ type: TOGGLELOGINCOMPONENT })}
           css={css.ToggleBtns}
+          isDisabled={isLoading}
         >
           SIGN UP
         </Button>

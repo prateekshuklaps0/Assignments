@@ -19,7 +19,9 @@ UserRoute.post("/signup", async (req, res) => {
     // Checking if user phone already exists
     const existingUserPhone = await UserModel.findOne({ phone });
     if (existingUserPhone) {
-      return res.status(400).json({ msg: "Phone No. already registered!" });
+      return res
+        .status(400)
+        .json({ msg: "This phone number has already been registered!" });
     }
 
     // Hashing the password
@@ -47,7 +49,7 @@ UserRoute.post("/login", async (req, res) => {
     const { emailOrPhone, password } = req.body;
 
     // Checking if the user exists by email
-    const user = await UserModel.findOne({ email: emailOrPhone });
+    let user = await UserModel.findOne({ email: emailOrPhone });
 
     if (!user) {
       // Checking if the user exists by phone no.
@@ -65,13 +67,15 @@ UserRoute.post("/login", async (req, res) => {
     }
 
     // Generating JWT token
-    const token = jwt.sign({ userId: user._id }, "TheBrandWick");
+    const token = jwt.sign({ userId: user._id }, "TheBrandWick", {
+      expiresIn: "1h",
+    });
 
     res
       .status(200)
       .json({ msg: "Login Successfull", userName: user.userName, token });
   } catch (error) {
-    console.error(error);
+    console.error("User LogIn Error:-", error);
     res.status(500).json({ msg: "User login error!" });
   }
 });

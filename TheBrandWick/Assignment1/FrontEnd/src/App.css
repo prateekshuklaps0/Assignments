@@ -23,12 +23,12 @@
 }
 /* track */
 ::-moz-scrollbar-track {
-  background: #120059ea;
+  background: rgb(117, 115, 115);
   border-radius: 50px;
 }
 /* handle */
 ::-moz-scrollbar-thumb {
-  background: orange;
+  background: #ff5e0e;
   border-radius: 50px;
 }
 /* For Chrome, Safari, and Opera */
@@ -38,12 +38,12 @@
 }
 /* track */
 ::-webkit-scrollbar-track {
-  background: #120059ea;
+  background: rgb(117, 115, 115);
   border-radius: 50px;
 }
 /* handle */
 ::-webkit-scrollbar-thumb {
-  background: orange;
+  background: #ff5e0e;
   border-radius: 50px;
 }
 
