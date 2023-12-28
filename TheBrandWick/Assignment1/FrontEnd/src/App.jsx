@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>TypeScript + React</>;
+  return <>JavaScript + React</>;
 }
 
 export default App;
