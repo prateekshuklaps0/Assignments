@@ -9,12 +9,17 @@ const UserRoute = express.Router();
 // SignUp
 UserRoute.post("/signup", async (req, res) => {
   try {
-    const { userName, email, password } = req.body;
+    const { userName, email, password, phone } = req.body;
 
-    // Checking if user already exists
-    const existingUser = await UserModel.findOne({ email });
-    if (existingUser) {
+    // Checking if user email already exists
+    const existingUserEmail = await UserModel.findOne({ email });
+    if (existingUserEmail) {
       return res.status(400).json({ msg: "Email already exists!" });
+    }
+    // Checking if user phone already exists
+    const existingUserPhone = await UserModel.findOne({ phone });
+    if (existingUserPhone) {
+      return res.status(400).json({ msg: "Phone No. already registered!" });
     }
 
     // Hashing the password
@@ -23,6 +28,7 @@ UserRoute.post("/signup", async (req, res) => {
     const newUser = new UserModel({
       userName,
       email,
+      phone,
       password: hashedPassword,
     });
 
@@ -38,10 +44,16 @@ UserRoute.post("/signup", async (req, res) => {
 // Login
 UserRoute.post("/login", async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { emailOrPhone, password } = req.body;
 
-    // Checking if the user exists
-    const user = await UserModel.findOne({ email });
+    // Checking if the user exists by email
+    const user = await UserModel.findOne({ email: emailOrPhone });
+
+    if (!user) {
+      // Checking if the user exists by phone no.
+      user = await UserModel.findOne({ phone: emailOrPhone });
+    }
+
     if (!user) {
       return res.status(404).json({ msg: "User not found!" });
     }
@@ -55,7 +67,9 @@ UserRoute.post("/login", async (req, res) => {
     // Generating JWT token
     const token = jwt.sign({ userId: user._id }, "TheBrandWick");
 
-    res.status(200).json({ msg: "Login Successfull", token });
+    res
+      .status(200)
+      .json({ msg: "Login Successfull", userName: user.userName, token });
   } catch (error) {
     console.error(error);
     res.status(500).json({ msg: "User login error!" });

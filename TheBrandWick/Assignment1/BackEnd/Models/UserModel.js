@@ -10,12 +10,16 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  phone: {
+    type: Number,
+    required: true,
+  },
   password: {
     type: String,
     required: true,
   },
 });
 
-const UserModel = mongoose.model("User", userSchema);
+const UserModel = mongoose.model("Thebrandwickuser", userSchema);
 
 module.exports = { UserModel };

@@ -2,3 +2,64 @@
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+
+#App {
+  min-height: 100dvh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll Bar Css */
+/* For Firefox */
+/* width */
+::-moz-scrollbar {
+  width: 7.5px;
+}
+/* track */
+::-moz-scrollbar-track {
+  background: #120059ea;
+  border-radius: 50px;
+}
+/* handle */
+::-moz-scrollbar-thumb {
+  background: orange;
+  border-radius: 50px;
+}
+/* For Chrome, Safari, and Opera */
+/* width */
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+/* track */
+::-webkit-scrollbar-track {
+  background: #120059ea;
+  border-radius: 50px;
+}
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  ::-moz-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media (max-width: 480px) {
+  ::-moz-scrollbar {
+    width: 2px;
+  }
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+}
