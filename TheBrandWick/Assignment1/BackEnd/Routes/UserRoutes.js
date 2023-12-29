@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 const { UserModel } = require("../Models/UserModel");
+const { BlacklistTokenModel } = require("../Models/BlacklistTokenModel");
 
 const UserRoute = express.Router();
 
@@ -77,6 +78,23 @@ UserRoute.post("/login", async (req, res) => {
   } catch (error) {
     console.error("User LogIn Error:-", error);
     res.status(500).json({ msg: "User login error!" });
+  }
+});
+
+// Logout
+UserRoute.post("/logout", async (req, res) => {
+  try {
+    const { token } = req.body;
+
+    const blacklistedToken = new BlacklistTokenModel({
+      token,
+    });
+    await blacklistedToken.save();
+
+    res.status(200).json({ msg: "Logout successful!" });
+  } catch (error) {
+    console.error("Logout Error:", error);
+    res.status(500).json({ msg: "Logout error!" });
   }
 });
 
