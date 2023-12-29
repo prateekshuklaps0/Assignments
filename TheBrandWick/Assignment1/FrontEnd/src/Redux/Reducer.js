@@ -41,6 +41,7 @@ export const Reducer = (state = init, { type, payload, name }) => {
         password: "",
         phone: "",
         emailOrPhone: "",
+        showLogin: !state.showLogin,
       };
     case INPCHANGE:
       return {
