@@ -4,20 +4,16 @@ import QuickAroundIcon from "../Assets/Home/QuickAround.png";
 import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
 import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
-import Navbar from "../Components/Navbar";
 
 import {
   MdPlayArrow as PlayArrowIcon,
   MdOutlineKeyboardArrowLeft as LeftArrow,
   MdOutlineKeyboardArrowRight as RightArrow,
 } from "react-icons/md";
-// import {  } from "react-icons/md";
 
 const Home = () => {
   return (
     <div className={css.homeOuter}>
-      <Navbar />
-
       <h1 className={css.heading}>Want To Build A Brand people Remember?</h1>
       <h1 className={css.subHeading}>
         See How an iconic logo Can help your Business Memorable!
@@ -74,7 +70,7 @@ const Home = () => {
           {new Array(2)
             .fill({
               name: "Abhishek Pandey",
-              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim",
+              text: "Lorem ipsum dolor sit amet, con-sectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim",
             })
             ?.map((testimonialItem: any, testimonialInd: number) => (
               <div
@@ -83,17 +79,27 @@ const Home = () => {
               >
                 <div>
                   <div className={css.imgTestimonialDiv}></div>
-                  <div>
+                  <div className={css.nameTestimonialDivOuter}>
                     <p>{testimonialItem?.name}</p>
                     <img src={FiveStarsIcon} alt="FiveStarsIcon" />
                   </div>
                 </div>
-                <p>{testimonialItem?.text}</p>
+                <p className={css.textTestimonial}>{testimonialItem?.text}</p>
               </div>
             ))}
         </div>
         <RightArrow className={css.arrowsTestimonials} />
       </div>
+
+      <div className={css.dividerA}></div>
+
+      <h1 className={css.heading}>
+        Creative Logo Designs That Win People’s Heart
+      </h1>
+      <h1 className={css.subHeading}>
+        Start your journey towards success with a professionally designed and
+        creatively crafted logo.
+      </h1>
     </div>
   );
 };
