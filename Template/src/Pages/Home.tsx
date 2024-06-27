@@ -44,7 +44,7 @@ const Home = () => {
         <p>Rated 4.9 by 2500+ satisfied customers</p>
       </div>
 
-      <div>
+      <div className={css.topBottomContDivOuter}>
         {[
           { text: "Quick Time Around", img: QuickAroundIcon },
           { text: "Free Revisions", img: FreeRevisionsIcon },

@@ -88,6 +88,41 @@
 .satisfiedCustDiv {
   display: flex;
   align-items: center;
-  gap: 30px;
   justify-content: center;
+  gap: 17.5px;
+  margin-top: -37.5px;
+
+  > img {
+    mix-blend-mode: multiply;
+    width: 160px;
+  }
+  p {
+    font-size: 30px;
+    font-weight: 400;
+    word-spacing: -2.5px;
+  }
+}
+.topBottomContDivOuter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topBottomContDivOuter > div {
+  box-shadow: var(--shadowC);
+  background: var(--pureWhite);
+  border: 3px solid var(--blackB);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    mix-blend-mode: multiply;
+    width: 160px;
+  }
+  p {
+    font-size: 22.5px;
+    font-weight: 400;
+    word-spacing: -2.5px;
+    line-height: 30px;
+  }
 }
