@@ -20,6 +20,12 @@ const Navbar = () => {
           // temporarly using p tag, can be replaced with a tag later
           <p
             onClick={() => setCurrNavMenu(navMenuItem?.to)}
+            style={{
+              cursor: currNavMenu == navMenuItem?.to ? "default" : "pointer",
+            }}
+            className={
+              currNavMenu == navMenuItem?.to ? css.activeNavMenu : undefined
+            }
             key={navMenuItem?.name + navMenuInd}
           >
             {navMenuItem?.name}
@@ -27,7 +33,9 @@ const Navbar = () => {
         ))}
       </div>
 
-      <button type="button">GET STARTED NOW</button>
+      <button className={css.getStartedBtn} type="button">
+        GET STARTED NOW
+      </button>
     </div>
   );
 };

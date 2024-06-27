@@ -7,15 +7,16 @@
   --blackB: #0f111d;
   --greyA: #9e9e9e;
   --yellowA: #f7d569;
-  --OrangeA: #f7c25a;
-  --OrangeB: #ffd9c5;
+  --orangeA: #f7c25a;
+  --orangeB: #ffd9c5;
 
   /* Backgrounds */
   --bg1: linear-gradient(to right, #1657f0, #36d7e0);
 
   /* Box Shadows */
-  --shadowA: 3px 3px 5px rgba(72, 79, 96, 0.4),
-    -3px -3px 5px rgba(255, 255, 255, 1);
+  --shadowA: var(--primary) 3px 3px;
+  --shadowB: var(--primary) 10px 10px;
+  --shadowC: var(--primary) 6px 6px;
 
   /* Fonts */
   --fontA: "Noto Kufi Arabic", sans-serif;
@@ -25,8 +26,9 @@
   margin: 0;
   padding: 0;
   cursor: default;
-  box-sizing: border-box;
   font-style: normal;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -34,5 +36,7 @@
   width: 100%;
   min-height: 100vh;
   font-family: var(--fontA);
-  color: var(--blackA);
+  color: var(--blackB);
+
+  padding-bottom: 400px;
 }
