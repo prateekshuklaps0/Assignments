@@ -77,9 +77,12 @@ const Home = () => {
               text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim",
             })
             ?.map((testimonialItem: any, testimonialInd: number) => (
-              <div key={testimonialItem?.name + testimonialInd}>
+              <div
+                className={css.cardTestimonial}
+                key={testimonialItem?.name + testimonialInd}
+              >
                 <div>
-                  <div></div>
+                  <div className={css.imgTestimonialDiv}></div>
                   <div>
                     <p>{testimonialItem?.name}</p>
                     <img src={FiveStarsIcon} alt="FiveStarsIcon" />
