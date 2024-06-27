@@ -6,7 +6,12 @@ import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
 import Navbar from "../Components/Navbar";
 
-import { MdPlayArrow as PlayArrowIcon } from "react-icons/md";
+import {
+  MdPlayArrow as PlayArrowIcon,
+  MdOutlineKeyboardArrowLeft as LeftArrow,
+  MdOutlineKeyboardArrowRight as RightArrow,
+} from "react-icons/md";
+// import {  } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -63,17 +68,28 @@ const Home = () => {
       <h1 className={css.heading}>Testimonials</h1>
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
 
-      <div>
-        <div>
-          {new Array(2).fill({
-            name: "Abhishek Pandey",
-            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-nonummy nibh euismod tincidunt 
-ut laoreet dolore magna aliquam 
-erat volutpat. Ut wisi enim ad 
-minim`,
-          })}
+      <div className={css.testimonialsOuterDiv}>
+        <LeftArrow className={css.arrowsTestimonials} />
+        <div className={css.testimonialsCardsHolderDiv}>
+          {new Array(2)
+            .fill({
+              name: "Abhishek Pandey",
+              text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamnonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim",
+            })
+            ?.map((testimonialItem: any, testimonialInd: number) => (
+              <div key={testimonialItem?.name + testimonialInd}>
+                <div>
+                  <div></div>
+                  <div>
+                    <p>{testimonialItem?.name}</p>
+                    <img src={FiveStarsIcon} alt="FiveStarsIcon" />
+                  </div>
+                </div>
+                <p>{testimonialItem?.text}</p>
+              </div>
+            ))}
         </div>
+        <RightArrow className={css.arrowsTestimonials} />
       </div>
     </div>
   );

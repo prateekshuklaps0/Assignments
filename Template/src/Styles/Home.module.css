@@ -139,3 +139,21 @@
   border-radius: 100%;
   background: var(--orangeB);
 }
+.testimonialsOuterDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 75px auto 0px;
+}
+.arrowsTestimonials {
+  font-size: 100px;
+  color: var(--blackB);
+  cursor: pointer;
+}
+.testimonialsCardsHolderDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
