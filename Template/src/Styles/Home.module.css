@@ -132,3 +132,10 @@
     line-height: 30px;
   }
 }
+.dividerA {
+  width: 70%;
+  margin: 100px auto 0px;
+  height: 4px;
+  border-radius: 100%;
+  background: var(--orangeB);
+}

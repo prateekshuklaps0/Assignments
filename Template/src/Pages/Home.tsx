@@ -57,6 +57,24 @@ const Home = () => {
           </div>
         ))}
       </div>
+
+      <div className={css.dividerA}></div>
+
+      <h1 className={css.heading}>Testimonials</h1>
+      <h1 className={css.subHeading}>See what they are saying about Us!</h1>
+
+      <div>
+        <div>
+          {new Array(2).fill({
+            name: "Abhishek Pandey",
+            text: `Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
+nonummy nibh euismod tincidunt 
+ut laoreet dolore magna aliquam 
+erat volutpat. Ut wisi enim ad 
+minim`,
+          })}
+        </div>
+      </div>
     </div>
   );
 };
