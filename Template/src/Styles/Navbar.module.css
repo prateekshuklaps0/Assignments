@@ -1,0 +1,28 @@
+.navOuter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.095em solid;
+  border-color: var(--blackA);
+}
+.logoOuter {
+  mix-blend-mode: multiply;
+  width: 125px;
+}
+.navMenuCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 40%;
+
+  > p {
+    font-family: var(--fontA);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  > p:hover {
+    cursor: pointer;
+  }
+}
