@@ -190,6 +190,98 @@ const Home = () => {
       <div className={css.moneyBackDivOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
       </div>
+
+      <div className={css.outerPricingDiv}>
+        <div>
+          <div style={{ marginTop: "67.5px" }} className={css.typePriceDiv}>
+            <p>STARTER</p>
+          </div>
+          <div>
+            <h1>₹3,999 + GST</h1>
+            <h1>One-Time Investment</h1>
+            <hr />
+            <p>3 Creative Logo Concept Designs</p>
+            <p>3 Design Revisions</p>
+            <p>Phone Consultation With Branding Head</p>
+            <p>HD Square Profile Images</p>
+            <p className={css.combinedPricePtag}>
+              <span>All Original Source Files</span>
+              <span>(AI, SVG, CDR, JPG, PNG, & PDF)</span>
+            </p>
+            <p>Copyright Ownership Transfer</p>
+            <p>Lifetime File Storage</p>
+          </div>
+        </div>
+        <div>
+          <div className={css.mostPopularDiv}>
+            <div className={css.actualMostPopularDiv}>
+              <img src={FiveStarsIcon} alt="FiveStarsIcon" />
+              <p>Most Popular</p>
+            </div>
+            <div className={css.typePriceDiv}>
+              <p>PREMINUM</p>
+            </div>
+          </div>
+          <div>
+            <h1>₹9,999 + GST</h1>
+            <h1>One-Time Investment</h1>
+            <hr />
+            <p>7 Creative Logo Concept Designs</p>
+            <p>7 Design Revisions</p>
+            <p>Phone Consultation With Branding Head</p>
+            <p>HD Square Profile Images</p>
+            <p className={css.combinedPricePtag}>
+              <span>All Original Source Files</span>
+              <span>(AI, SVG, CDR, JPG, PNG, & PDF)</span>
+            </p>
+            <p>Copyright Ownership Transfer</p>
+            <p>Lifetime File Storage</p>
+            <p className={css.boldPriceFeature}>Brand Identity</p>
+            <p className={css.combinedPricePtag}>
+              <span>Stationery Kit</span>
+              <span>
+                (Printable - Visiting Card, Letterhead, and Envelope Design)
+              </span>
+            </p>
+            <p className={css.combinedPricePtag}>
+              <span>Brand Guidelines</span>
+              <span>
+                (Guide Book For How To Properly Use Your Logo Everywhere)
+              </span>
+            </p>
+            <p>Power Point Template</p>
+            <p>Email Signature</p>
+            <p className={css.boldPriceFeature}>Complimentary</p>
+            <p>5 Logo Animation Videos</p>
+            <p>10 3D Realistic Mockup Files</p>
+            <p>1 Digital Visiting Card</p>
+          </div>
+        </div>
+        <div>
+          <div style={{ marginTop: "67.5px" }} className={css.typePriceDiv}>
+            <p>PROFESSIONAL</p>
+          </div>
+          <div>
+            <h1>₹5,999 + GST</h1>
+            <h1>One-Time Investment</h1>
+            <hr />
+            <p>5 Creative Logo Concept Designs</p>
+            <p>5 Design Revisions</p>
+            <p>Phone Consultation With Branding Head</p>
+            <p>HD Square Profile Images</p>
+            <p className={css.combinedPricePtag}>
+              <span>All Original Source Files</span>
+              <span>(AI, SVG, CDR, JPG, PNG, & PDF)</span>
+            </p>
+            <p>Copyright Ownership Transfer</p>
+            <p>Lifetime File Storage</p>
+            <p className={css.boldPriceFeature}>Complimentary</p>
+            <p>5 Logo Animation Videos</p>
+            <p>10 3D Realistic Mockup Files</p>
+            <p>1 Digital Visiting Card</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

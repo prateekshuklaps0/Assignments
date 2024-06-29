@@ -285,3 +285,51 @@
     height: 160px;
   }
 }
+.outerPricingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -50px auto 0px;
+  width: 85%;
+}
+.mostPopularDiv {
+  background: var(--orangeB);
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 20px 0px;
+}
+.actualMostPopularDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  margin: 0px auto 5px;
+
+  > img {
+    mix-blend-mode: multiply;
+    width: 160px;
+  }
+
+  > p {
+    margin: 0;
+    padding: 0;
+    font-size: 27.5px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    word-spacing: -1.5px;
+  }
+}
+.typePriceDiv {
+  background: var(--blackB);
+  color: var(--pureWhite);
+  border-radius: 8px;
+  padding: 7.5px 0px;
+  text-align: center;
+  margin: auto;
+  width: 370px;
+
+  > p {
+    font-size: 27.5px;
+    font-weight: 700;
+  }
+}
