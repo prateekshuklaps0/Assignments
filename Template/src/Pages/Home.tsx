@@ -362,6 +362,36 @@ const Home = () => {
       </div>
 
       <div className={css.dividerB}></div>
+
+      <h1 style={{ marginTop: "75px" }} className={css.heading}>
+        Some Exclusive Benefits You Get Only With Us
+      </h1>
+
+      <div>
+        {[
+          {
+            head: "Fast Turnaround",
+            text: "Get your designs back in 3 to 4 working days",
+          },
+          {
+            head: "Brand Safety",
+            text: "Get full copyright ownership of your final design.",
+          },
+          {
+            head: "World Class Designers",
+            text: "Work with highly passionate designers eagerly waiting to transform your ideas into remarkable brands.",
+          },
+          {
+            head: "Dedicated Brand Expert",
+            text: "Get a full-time dedicated brand expert who is always available to listen to your needs and give you a world-class identity that makes a mark.",
+          },
+        ]?.map((benefitItem: any, benefitInd: number) => (
+          <div key={benefitInd + benefitItem?.head}>
+            <h1>{benefitItem?.head}</h1>
+            <p>{benefitItem?.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
