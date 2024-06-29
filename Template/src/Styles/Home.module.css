@@ -253,3 +253,21 @@
   margin: auto;
   width: 100%;
 }
+.featuresDivOuter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  > div > svg {
+  }
+  > div > p {
+    font-weight: 400;
+    font-size: 26px;
+    word-spacing: -1.5px;
+  }
+}

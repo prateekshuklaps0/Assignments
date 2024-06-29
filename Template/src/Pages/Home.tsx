@@ -11,6 +11,7 @@ import {
   MdOutlineKeyboardArrowLeft as LeftArrow,
   MdOutlineKeyboardArrowRight as RightArrow,
 } from "react-icons/md";
+import { LiaCheckCircleSolid as CheckCircleIcon } from "react-icons/lia";
 
 const Home = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -160,6 +161,21 @@ const Home = () => {
       </h1>
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
+
+      <div className={css.featuresDivOuter}>
+        <div>
+          <CheckCircleIcon />
+          <p>Quick Turnaround</p>
+        </div>
+        <div>
+          <CheckCircleIcon />
+          <p>Free Revisions</p>
+        </div>
+        <div>
+          <CheckCircleIcon />
+          <p>Copyright Ownership Transfer</p>
+        </div>
+      </div>
     </div>
   );
 };
