@@ -162,11 +162,15 @@ const Home = () => {
           <div className={css.smallCardDiv}></div>
         </div>
       </div>
+
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+
       <h1 style={{ width: "85%" }} className={css.heading}>
         Transform Your Business Into Brand With Stunning Iconic Logo design
       </h1>
+
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
+
       <div className={css.featuresDivOuter}>
         <div>
           <CheckCircleIcon />
@@ -181,16 +185,21 @@ const Home = () => {
           <p>Copyright Ownership Transfer</p>
         </div>
       </div>
+
       <div style={{ marginTop: "75px" }} className={css.dividerA}></div>
+
       <h1 style={{ width: "85%" }} className={css.heading}>
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
+
       <h1 className={css.subHeading}>
         100% Money-Back Guarantee On All Plans.
       </h1>
+
       <div className={css.moneyBackDivOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
       </div>
+
       <div className={css.outerPricingDiv}>
         <div className={css.priceCardDiv}>
           <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
