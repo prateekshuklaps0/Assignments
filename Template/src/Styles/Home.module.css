@@ -386,8 +386,22 @@
 }
 .dontLikeOuterDiv {
   margin: auto;
-  width: 85%;
+  width: 87.5%;
   display: flex;
+  align-items: center;
+  gap: 75px;
+
+  > div > h1:nth-of-type(1) {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 47px;
+    word-spacing: -5px;
+    letter-spacing: -1.5px;
+    margin-top: 50px;
+    line-height: 55px;
+  }
 
   > img:nth-of-type(1) {
     width: 340px;
@@ -415,9 +429,22 @@
 }
 .signatureDiv {
   img {
-    width: 150px;
+    width: 225px;
     mix-blend-mode: multiply;
+    margin-top: 40px;
   }
   h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: -10px;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+  }
+  p {
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: -20px;
+    letter-spacing: -1px;
+    word-spacing: -1px;
   }
 }

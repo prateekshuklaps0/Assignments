@@ -286,13 +286,12 @@ const Home = () => {
 
       <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
 
-      <h1 style={{ width: "85%" }} className={css.heading}>
-        What If I Don’t Like The Designs?
-      </h1>
-
       <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
+          <h1 style={{ width: "85%" }} className={css.heading}>
+            What If I Don’t Like The Designs?
+          </h1>
           <h1>
             Well, this is the most frequent question we get asked. We are so
             confident of our work that we have a down-right 100% Money-back
@@ -323,6 +322,40 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
+
+      <h1 style={{ marginTop: "100px" }} className={css.heading}>
+        Logo Designing Process
+      </h1>
+
+      <div>
+        {[
+          {
+            img: FiveStarsIcon,
+            head: "Tell Us About Your Vision",
+            text: "Submit the design brief and tell us your ideas and what kind of design you’re expecting.",
+          },
+          {
+            img: FiveStarsIcon,
+            head: "Review The Logo Designs",
+            text: "Review the designs we provide and let us know if you need any changes.",
+          },
+          {
+            img: FiveStarsIcon,
+            head: "Approve The Winning Logo",
+            text: "Approve the design to receive original source files, copyright and bonuses.",
+          },
+        ]?.map((processItem: any, processInd: number) => (
+          <div key={processInd + processItem?.head}>
+            <img src={processItem?.img} alt={processItem?.head} />
+            <h1>{processItem?.head}</h1>
+            <p>{processItem?.text}</p>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
     </div>
   );
 };
