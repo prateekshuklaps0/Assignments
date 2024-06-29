@@ -140,6 +140,13 @@
   border-radius: 100%;
   background: var(--orangeB);
 }
+.dividerB {
+  width: 70%;
+  margin: auto;
+  height: 4px;
+  border-radius: 100%;
+  background: var(--blackB);
+}
 .testimonialsOuterDiv {
   display: flex;
   align-items: center;
@@ -287,29 +294,31 @@
 }
 .outerPricingDiv {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin: -50px auto 0px;
-  width: 85%;
+  width: 90%;
+  gap: 40px;
+}
+.priceCardDiv {
+  flex: 1;
 }
 .mostPopularDiv {
   background: var(--orangeB);
   border-radius: 10px;
   width: 100%;
-  padding: 10px 20px 0px;
+  padding: 10px 0px 0px;
 }
 .actualMostPopularDiv {
   display: flex;
   align-items: center;
   gap: 20px;
   width: fit-content;
-  margin: 0px auto 5px;
+  margin: 0px auto 7.5px;
 
   > img {
     mix-blend-mode: multiply;
     width: 160px;
   }
-
   > p {
     margin: 0;
     padding: 0;
@@ -331,5 +340,84 @@
   > p {
     font-size: 27.5px;
     font-weight: 700;
+  }
+}
+.priceDivs {
+  box-shadow: var(--shadowD);
+  border: 2px solid var(--blackB);
+  background: var(--pureWhite);
+  border-radius: 10px;
+  padding: 60px 20px 0px;
+  height: 92.5%;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  hr {
+    border: 0.5px solid var(--blackB);
+    margin: 45px auto 35px;
+    width: 85%;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    word-spacing: -1px;
+    margin-top: 10px;
+  }
+  .combinedPricePtag {
+    display: flex;
+    flex-direction: column;
+
+    > span:nth-of-type(2) {
+      margin-top: -12.5px;
+    }
+  }
+  .boldPriceFeature {
+    font-weight: 900;
+  }
+}
+.dontLikeOuterDiv {
+  margin: auto;
+  width: 85%;
+  display: flex;
+
+  > img:nth-of-type(1) {
+    width: 340px;
+    height: 340px;
+    mix-blend-mode: multiply;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 26px;
+    word-spacing: -1.5px;
+    letter-spacing: -1px;
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  h1 > em {
+    color: var(--primary);
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 700;
+  }
+}
+.signatureDiv {
+  img {
+    width: 150px;
+    mix-blend-mode: multiply;
+  }
+  h2 {
   }
 }

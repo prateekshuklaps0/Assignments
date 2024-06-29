@@ -5,6 +5,7 @@ import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
 import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
 import MoneyBack2Icon from "../Assets/Home/MoneyBack2.png";
+import Signature from "../Assets/Home/Signature.jpeg";
 
 import { useState } from "react";
 import {
@@ -192,11 +193,11 @@ const Home = () => {
       </div>
 
       <div className={css.outerPricingDiv}>
-        <div>
-          <div style={{ marginTop: "67.5px" }} className={css.typePriceDiv}>
+        <div className={css.priceCardDiv}>
+          <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
             <p>STARTER</p>
           </div>
-          <div>
+          <div className={css.priceDivs}>
             <h1>₹3,999 + GST</h1>
             <h1>One-Time Investment</h1>
             <hr />
@@ -212,7 +213,7 @@ const Home = () => {
             <p>Lifetime File Storage</p>
           </div>
         </div>
-        <div>
+        <div className={css.priceCardDiv}>
           <div className={css.mostPopularDiv}>
             <div className={css.actualMostPopularDiv}>
               <img src={FiveStarsIcon} alt="FiveStarsIcon" />
@@ -222,7 +223,7 @@ const Home = () => {
               <p>PREMINUM</p>
             </div>
           </div>
-          <div>
+          <div className={css.priceDivs}>
             <h1>₹9,999 + GST</h1>
             <h1>One-Time Investment</h1>
             <hr />
@@ -257,11 +258,11 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-        <div>
-          <div style={{ marginTop: "67.5px" }} className={css.typePriceDiv}>
+        <div className={css.priceCardDiv}>
+          <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
             <p>PROFESSIONAL</p>
           </div>
-          <div>
+          <div className={css.priceDivs}>
             <h1>₹5,999 + GST</h1>
             <h1>One-Time Investment</h1>
             <hr />
@@ -279,6 +280,46 @@ const Home = () => {
             <p>5 Logo Animation Videos</p>
             <p>10 3D Realistic Mockup Files</p>
             <p>1 Digital Visiting Card</p>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
+
+      <h1 style={{ width: "85%" }} className={css.heading}>
+        What If I Don’t Like The Designs?
+      </h1>
+
+      <div className={css.dontLikeOuterDiv}>
+        <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
+        <div>
+          <h1>
+            Well, this is the most frequent question we get asked. We are so
+            confident of our work that we have a down-right 100% Money-back
+            Guarantee.
+          </h1>
+          <h1>
+            Either you get the design you love or you get your money back. It is
+            as simple as that.
+          </h1>
+          <h1>
+            We believe we can thrive in business only if our clients are happy
+            with what we do. So, that is exactly what we aim for.
+          </h1>
+          <h1>
+            However, for some reason, if you are still not satisfied with the
+            result, we will do all that we can to fix that.
+          </h1>
+          <h1>
+            Or else, you will get 100% money back after seeing the first design.
+          </h1>
+          <h1>
+            For a detailed view of the refund policy, <em>CLICK HERE.</em>
+          </h1>
+          <div className={css.signatureDiv}>
+            <img src={Signature} alt="Signature" />
+            <h2>Abhishek Singh</h2>
+            <p>Founder Of Digisurg</p>
           </div>
         </div>
       </div>
