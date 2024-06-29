@@ -291,7 +291,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
+
       <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
@@ -328,10 +330,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
+
       <h1 style={{ marginTop: "100px" }} className={css.heading}>
         Logo Designing Process
       </h1>
+
       <div className={css.processOuter}>
         {[
           {
@@ -360,10 +365,13 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <div className={css.dividerB}></div>
+
       <h1 style={{ marginTop: "75px" }} className={css.heading}>
         Some Exclusive Benefits You Get Only With Us
       </h1>
+
       <div className={css.benefitsOuter}>
         {[
           {
@@ -392,10 +400,13 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <div className={css.dividerB}></div>
+
       <h1 style={{ marginTop: "75px" }} className={css.heading}>
         Frequently Asked Questions
       </h1>
+
       <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
@@ -420,7 +431,9 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <div className={css.dividerB}></div>
+
       <div className={css.upperFooter}>
         <h1>Ready To Build A Brand People Remember?</h1>
         <div className={css.getStartedBtn}>START NOW</div>
@@ -439,14 +452,18 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <div className={css.dividerC}></div>
+
       <p className={css.footerText}>
         This site is not a part of the Facebook website or Facebook Inc.
         Additionally, This site is NOT endorsed by
       </p>
+
       <p className={css.footerText}>
         Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
       </p>
+
       <div className={css.footerDiv}>
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
