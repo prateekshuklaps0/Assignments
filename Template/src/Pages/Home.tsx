@@ -25,9 +25,11 @@ const Home = () => {
   return (
     <div className={css.homeOuter}>
       <h1 className={css.heading}>Want To Build A Brand people Remember?</h1>
+
       <h1 className={css.subHeading}>
         See How an iconic logo Can help your Business Memorable!
       </h1>
+
       <div className={css.topContDiv}>
         <div>
           {[
@@ -46,6 +48,7 @@ const Home = () => {
           <PlayArrowIcon />
         </div>
       </div>
+
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
       <div className={css.satisfiedCustDiv}>
         <img src={FiveStarsIcon} alt="FiveStarsIcon" />
