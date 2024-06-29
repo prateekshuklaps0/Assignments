@@ -50,10 +50,12 @@ const Home = () => {
       </div>
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
+
       <div className={css.satisfiedCustDiv}>
         <img src={FiveStarsIcon} alt="FiveStarsIcon" />
         <p>Rated 4.9 by 2500+ satisfied customers</p>
       </div>
+
       <div className={css.topBottomContDivOuter}>
         {[
           { text: "Quick Time Around", img: QuickAroundIcon },
@@ -67,9 +69,13 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+
       <h1 className={css.heading}>Testimonials</h1>
+
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
+
       <div className={css.testimonialsOuterDiv}>
         <LeftArrow className={css.arrowsTestimonials} />
         <div className={css.testimonialsCardsHolderDiv}>
@@ -96,7 +102,9 @@ const Home = () => {
         </div>
         <RightArrow className={css.arrowsTestimonials} />
       </div>
+
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+
       <h1 className={css.heading}>
         Creative Logo Designs That Win People’s Heart
       </h1>
