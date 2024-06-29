@@ -108,11 +108,14 @@ const Home = () => {
       <h1 className={css.heading}>
         Creative Logo Designs That Win People’s Heart
       </h1>
+
       <h1 className={css.subHeading}>
         Start your journey towards success with a professionally designed and
         creatively crafted logo.
       </h1>
+
       <div style={{ marginTop: "60px" }} className={css.dividerA}></div>
+
       <div className={css.categoryHolderDiv}>
         {[
           "All",
@@ -142,7 +145,9 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <div style={{ marginTop: "22.5px" }} className={css.dividerA}></div>
+
       <div className={css.cardHolderDivOuter}>
         <div>
           <div className={css.bigCardDiv}></div>
