@@ -367,7 +367,7 @@ const Home = () => {
         Some Exclusive Benefits You Get Only With Us
       </h1>
 
-      <div>
+      <div className={css.benefitsOuter}>
         {[
           {
             head: "Fast Turnaround",
@@ -386,12 +386,21 @@ const Home = () => {
             text: "Get a full-time dedicated brand expert who is always available to listen to your needs and give you a world-class identity that makes a mark.",
           },
         ]?.map((benefitItem: any, benefitInd: number) => (
-          <div key={benefitInd + benefitItem?.head}>
+          <div
+            className={css.benefitsCardDiv}
+            key={benefitInd + benefitItem?.head}
+          >
             <h1>{benefitItem?.head}</h1>
             <p>{benefitItem?.text}</p>
           </div>
         ))}
       </div>
+
+      <div className={css.dividerB}></div>
+
+      <h1 style={{ marginTop: "75px" }} className={css.heading}>
+        Frequently Asked Questions
+      </h1>
     </div>
   );
 };

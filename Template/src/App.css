@@ -18,6 +18,7 @@
   --shadowB: var(--primary) 10px 10px;
   --shadowC: var(--primary) 6px 6px;
   --shadowD: var(--primary) 7.5px 15px;
+  --shadowE: var(--primary) 15px 15px;
 
   /* Fonts */
   --fontA: "Noto Kufi Arabic", sans-serif;
