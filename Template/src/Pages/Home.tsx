@@ -59,7 +59,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className={css.dividerA}></div>
+      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
 
       <h1 className={css.heading}>Testimonials</h1>
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
@@ -91,7 +91,7 @@ const Home = () => {
         <RightArrow className={css.arrowsTestimonials} />
       </div>
 
-      <div className={css.dividerA}></div>
+      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
 
       <h1 className={css.heading}>
         Creative Logo Designs That Win People’s Heart
@@ -100,6 +100,8 @@ const Home = () => {
         Start your journey towards success with a professionally designed and
         creatively crafted logo.
       </h1>
+
+      <div style={{ marginTop: "60px" }} className={css.dividerA}></div>
     </div>
   );
 };

@@ -134,7 +134,7 @@
 }
 .dividerA {
   width: 70%;
-  margin: 100px auto 0px;
+  margin: auto;
   height: 4px;
   border-radius: 100%;
   background: var(--orangeB);
