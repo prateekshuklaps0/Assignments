@@ -401,6 +401,14 @@ const Home = () => {
       <h1 style={{ marginTop: "75px" }} className={css.heading}>
         Frequently Asked Questions
       </h1>
+
+      <div>
+        {[{ ques: "", ans: "" }]?.map((faqItem: any, faqInd: number) => (
+          <div key={faqInd + faqItem?.ques}>
+            <p>{faqItem?.ques}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
