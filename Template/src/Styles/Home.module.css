@@ -531,3 +531,27 @@
     padding: 0px 17.5px;
   }
 }
+.faqOuter {
+  margin: 60px auto 115px;
+  width: 75%;
+}
+.faqCardDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blackB);
+
+  p {
+    text-align: left;
+    font-weight: 500;
+    font-size: 28px;
+    word-spacing: -1.5px;
+    letter-spacing: -1px;
+    margin: 32.5px 0px 17.5px;
+    line-height: 30px;
+  }
+  img {
+    width: 32.5px;
+    mix-blend-mode: multiply;
+  }
+}

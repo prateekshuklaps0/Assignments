@@ -1,14 +1,15 @@
 import css from "../Styles/Home.module.css";
-import FiveStarsIcon from "../Assets/Home/FiveStars.png";
-import QuickAroundIcon from "../Assets/Home/QuickAround.png";
-import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
-import CopyrightIcon from "../Assets/Home/Copyright.png";
-import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
-import MoneyBack2Icon from "../Assets/Home/MoneyBack2.png";
+import Plus from "../Assets/Home/Plus.png";
+import Approve from "../Assets/Home/Approve.png";
+import Feedback from "../Assets/Home/Feedback.png";
 import Signature from "../Assets/Home/Signature.jpeg";
 import Requirement from "../Assets/Home/Requirement.png";
-import Feedback from "../Assets/Home/Feedback.png";
-import Approve from "../Assets/Home/Approve.png";
+import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
+import FiveStarsIcon from "../Assets/Home/FiveStars.png";
+import CopyrightIcon from "../Assets/Home/Copyright.png";
+import MoneyBack2Icon from "../Assets/Home/MoneyBack2.png";
+import QuickAroundIcon from "../Assets/Home/QuickAround.png";
+import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
 
 import { useState } from "react";
 import {
@@ -402,11 +403,11 @@ const Home = () => {
         Frequently Asked Questions
       </h1>
 
-      <div>
+      <div className={css.faqOuter}>
         {[
-          { ques: "Why should I hire Digisurg", ans: "" },
+          { ques: "Why should I hire Digisurg?", ans: "" },
           {
-            ques: "How are you offering such benefits at this price point? What’s the catch",
+            ques: "How are you offering such benefits at this price point? What’s the catch?",
             ans: "",
           },
           {
@@ -420,11 +421,14 @@ const Home = () => {
           { ques: "Can I upgrade my package during the order?", ans: "" },
           { ques: "Do you offer discounts", ans: "" },
         ]?.map((faqItem: any, faqInd: number) => (
-          <div key={faqInd + faqItem?.ques}>
+          <div className={css.faqCardDiv} key={faqInd + faqItem?.ques}>
             <p>{faqItem?.ques}</p>
+            <img src={Plus} alt="Plus" />
           </div>
         ))}
       </div>
+
+      <div className={css.dividerB}></div>
     </div>
   );
 };
