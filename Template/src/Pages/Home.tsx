@@ -28,7 +28,6 @@ const Home = () => {
       <h1 className={css.subHeading}>
         See How an iconic logo Can help your Business Memorable!
       </h1>
-
       <div className={css.topContDiv}>
         <div>
           {[
@@ -47,14 +46,11 @@ const Home = () => {
           <PlayArrowIcon />
         </div>
       </div>
-
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
-
       <div className={css.satisfiedCustDiv}>
         <img src={FiveStarsIcon} alt="FiveStarsIcon" />
         <p>Rated 4.9 by 2500+ satisfied customers</p>
       </div>
-
       <div className={css.topBottomContDivOuter}>
         {[
           { text: "Quick Time Around", img: QuickAroundIcon },
@@ -68,12 +64,9 @@ const Home = () => {
           </div>
         ))}
       </div>
-
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
-
       <h1 className={css.heading}>Testimonials</h1>
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
-
       <div className={css.testimonialsOuterDiv}>
         <LeftArrow className={css.arrowsTestimonials} />
         <div className={css.testimonialsCardsHolderDiv}>
@@ -100,9 +93,7 @@ const Home = () => {
         </div>
         <RightArrow className={css.arrowsTestimonials} />
       </div>
-
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
-
       <h1 className={css.heading}>
         Creative Logo Designs That Win People’s Heart
       </h1>
@@ -110,9 +101,7 @@ const Home = () => {
         Start your journey towards success with a professionally designed and
         creatively crafted logo.
       </h1>
-
       <div style={{ marginTop: "60px" }} className={css.dividerA}></div>
-
       <div className={css.categoryHolderDiv}>
         {[
           "All",
@@ -142,9 +131,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-
       <div style={{ marginTop: "22.5px" }} className={css.dividerA}></div>
-
       <div className={css.cardHolderDivOuter}>
         <div>
           <div className={css.bigCardDiv}></div>
@@ -159,15 +146,11 @@ const Home = () => {
           <div className={css.smallCardDiv}></div>
         </div>
       </div>
-
       <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
-
       <h1 style={{ width: "85%" }} className={css.heading}>
         Transform Your Business Into Brand With Stunning Iconic Logo design
       </h1>
-
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
-
       <div className={css.featuresDivOuter}>
         <div>
           <CheckCircleIcon />
@@ -182,20 +165,16 @@ const Home = () => {
           <p>Copyright Ownership Transfer</p>
         </div>
       </div>
-
       <div style={{ marginTop: "75px" }} className={css.dividerA}></div>
-
       <h1 style={{ width: "85%" }} className={css.heading}>
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
       <h1 className={css.subHeading}>
         100% Money-Back Guarantee On All Plans.
       </h1>
-
       <div className={css.moneyBackDivOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
       </div>
-
       <div className={css.outerPricingDiv}>
         <div className={css.priceCardDiv}>
           <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
@@ -287,9 +266,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
-
       <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
@@ -326,13 +303,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
-
       <h1 style={{ marginTop: "100px" }} className={css.heading}>
         Logo Designing Process
       </h1>
-
       <div className={css.processOuter}>
         {[
           {
@@ -361,13 +335,10 @@ const Home = () => {
           </div>
         ))}
       </div>
-
       <div className={css.dividerB}></div>
-
       <h1 style={{ marginTop: "75px" }} className={css.heading}>
         Some Exclusive Benefits You Get Only With Us
       </h1>
-
       <div className={css.benefitsOuter}>
         {[
           {
@@ -396,13 +367,10 @@ const Home = () => {
           </div>
         ))}
       </div>
-
       <div className={css.dividerB}></div>
-
       <h1 style={{ marginTop: "75px" }} className={css.heading}>
         Frequently Asked Questions
       </h1>
-
       <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
@@ -427,11 +395,9 @@ const Home = () => {
           </div>
         ))}
       </div>
-
       <div className={css.dividerB}></div>
-
-      <div>
-        <h1 className={css.heading}>Ready To Build A Brand People Remember?</h1>
+      <div className={css.upperFooter}>
+        <h1>Ready To Build A Brand People Remember?</h1>
         <div className={css.getStartedBtn}>START NOW</div>
         <div className={css.featuresDivOuter}>
           <div>
@@ -447,6 +413,19 @@ const Home = () => {
             <p>Copyright Ownership Transfer</p>
           </div>
         </div>
+      </div>
+      <div className={css.dividerC}></div>
+      <p className={css.footerText}>
+        This site is not a part of the Facebook website or Facebook Inc.
+        Additionally, This site is NOT endorsed by
+      </p>
+      <p className={css.footerText}>
+        Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+      </p>
+      <div className={css.footerDiv}>
+        <p>Privacy Policy</p>
+        <p>Refund Policy</p>
+        <p>Terms Of Service</p>
       </div>
     </div>
   );
