@@ -4,6 +4,7 @@ import QuickAroundIcon from "../Assets/Home/QuickAround.png";
 import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
 import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
+import MoneyBack2Icon from "../Assets/Home/MoneyBack2.png";
 
 import { useState } from "react";
 import {
@@ -175,6 +176,19 @@ const Home = () => {
           <CheckCircleIcon />
           <p>Copyright Ownership Transfer</p>
         </div>
+      </div>
+
+      <div style={{ marginTop: "75px" }} className={css.dividerA}></div>
+
+      <h1 style={{ width: "85%" }} className={css.heading}>
+        Logo Design Pricing Suitable For All Sized Businesses
+      </h1>
+      <h1 className={css.subHeading}>
+        100% Money-Back Guarantee On All Plans.
+      </h1>
+
+      <div className={css.moneyBackDivOuter}>
+        <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
       </div>
     </div>
   );
