@@ -448,3 +448,44 @@
     word-spacing: -1px;
   }
 }
+.processOuter {
+  width: 92.5%;
+  margin: 75px auto 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.processCardDiv {
+  background: var(--orangeB);
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  padding: 20px 15px 50px;
+
+  img {
+    mix-blend-mode: multiply;
+    width: 375px;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 30px;
+    letter-spacing: -1px;
+    word-spacing: -2.5px;
+  }
+  p {
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 24.5px;
+    word-spacing: -1.5px;
+    letter-spacing: -1px;
+    margin-top: 30px;
+    line-height: 35px;
+    padding: 0px 17.5px;
+  }
+}

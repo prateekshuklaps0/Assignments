@@ -6,6 +6,9 @@ import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
 import MoneyBack2Icon from "../Assets/Home/MoneyBack2.png";
 import Signature from "../Assets/Home/Signature.jpeg";
+import Requirement from "../Assets/Home/Requirement.png";
+import Feedback from "../Assets/Home/Feedback.png";
+import Approve from "../Assets/Home/Approve.png";
 
 import { useState } from "react";
 import {
@@ -329,25 +332,28 @@ const Home = () => {
         Logo Designing Process
       </h1>
 
-      <div>
+      <div className={css.processOuter}>
         {[
           {
-            img: FiveStarsIcon,
+            img: Requirement,
             head: "Tell Us About Your Vision",
             text: "Submit the design brief and tell us your ideas and what kind of design you’re expecting.",
           },
           {
-            img: FiveStarsIcon,
+            img: Feedback,
             head: "Review The Logo Designs",
             text: "Review the designs we provide and let us know if you need any changes.",
           },
           {
-            img: FiveStarsIcon,
+            img: Approve,
             head: "Approve The Winning Logo",
             text: "Approve the design to receive original source files, copyright and bonuses.",
           },
         ]?.map((processItem: any, processInd: number) => (
-          <div key={processInd + processItem?.head}>
+          <div
+            className={css.processCardDiv}
+            key={processInd + processItem?.head}
+          >
             <img src={processItem?.img} alt={processItem?.head} />
             <h1>{processItem?.head}</h1>
             <p>{processItem?.text}</p>
@@ -355,7 +361,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
+      <div className={css.dividerB}></div>
     </div>
   );
 };
