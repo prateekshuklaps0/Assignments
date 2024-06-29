@@ -403,7 +403,23 @@ const Home = () => {
       </h1>
 
       <div>
-        {[{ ques: "", ans: "" }]?.map((faqItem: any, faqInd: number) => (
+        {[
+          { ques: "Why should I hire Digisurg", ans: "" },
+          {
+            ques: "How are you offering such benefits at this price point? What’s the catch",
+            ans: "",
+          },
+          {
+            ques: "There are lots of other companies designing logos why should we choose you?",
+            ans: "",
+          },
+          {
+            ques: "How much time it will take to complete the logo design?",
+            ans: "",
+          },
+          { ques: "Can I upgrade my package during the order?", ans: "" },
+          { ques: "Do you offer discounts", ans: "" },
+        ]?.map((faqItem: any, faqInd: number) => (
           <div key={faqInd + faqItem?.ques}>
             <p>{faqItem?.ques}</p>
           </div>
