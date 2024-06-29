@@ -429,6 +429,25 @@ const Home = () => {
       </div>
 
       <div className={css.dividerB}></div>
+
+      <div>
+        <h1 className={css.heading}>Ready To Build A Brand People Remember?</h1>
+        <div className={css.getStartedBtn}>START NOW</div>
+        <div className={css.featuresDivOuter}>
+          <div>
+            <CheckCircleIcon />
+            <p>Quick Turnaround</p>
+          </div>
+          <div>
+            <CheckCircleIcon />
+            <p>Free Revisions</p>
+          </div>
+          <div>
+            <CheckCircleIcon />
+            <p>Copyright Ownership Transfer</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
