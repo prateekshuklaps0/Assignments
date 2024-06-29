@@ -25,7 +25,6 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: default;
   font-style: normal;
   box-sizing: border-box;
   font-optical-sizing: auto;
@@ -35,8 +34,8 @@
 #App {
   width: 100%;
   min-height: 100vh;
+  cursor: default;
   font-family: var(--fontA);
   color: var(--blackB);
-
   padding-bottom: 400px;
 }

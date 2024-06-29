@@ -5,6 +5,7 @@ import FreeRevisionsIcon from "../Assets/Home/FreeRevisions.png";
 import CopyrightIcon from "../Assets/Home/Copyright.png";
 import MoneyBackIcon from "../Assets/Home/MoneyBack.png";
 
+import { useState } from "react";
 import {
   MdPlayArrow as PlayArrowIcon,
   MdOutlineKeyboardArrowLeft as LeftArrow,
@@ -12,6 +13,8 @@ import {
 } from "react-icons/md";
 
 const Home = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
   return (
     <div className={css.homeOuter}>
       <h1 className={css.heading}>Want To Build A Brand people Remember?</h1>
@@ -102,6 +105,38 @@ const Home = () => {
       </h1>
 
       <div style={{ marginTop: "60px" }} className={css.dividerA}></div>
+
+      <div className={css.categoryHolderDiv}>
+        {[
+          "All",
+          "Construction",
+          "Consultancy",
+          "Cosmetic",
+          "Fashion",
+          "Food",
+          "Interior",
+          "IT",
+          "Jewellery",
+          "Medical",
+          "Travel",
+        ]?.map((categoryItem: any, categoryInd: number) => (
+          <div
+            style={{
+              background:
+                activeCategory == categoryItem
+                  ? "var(--orangeB)"
+                  : "var(--pureWhite)",
+              cursor: activeCategory == categoryItem ? "default" : "pointer",
+            }}
+            onClick={() => setActiveCategory(categoryItem)}
+            key={categoryItem + categoryInd}
+          >
+            <p>{categoryItem}</p>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: "22.5px" }} className={css.dividerA}></div>
     </div>
   );
 };

@@ -198,3 +198,26 @@
   margin: 50px auto 20px;
   width: 90%;
 }
+.categoryHolderDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 22.5px auto 0px;
+  width: 87.5%;
+
+  > div {
+    border-radius: 10px;
+    padding: 5px 17.5px;
+    background: pink;
+    transition: all 0.2s ease;
+  }
+  > div > p {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 22px;
+    word-spacing: -1.5px;
+    margin-top: -2.5px;
+  }
+}
