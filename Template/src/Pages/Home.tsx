@@ -137,6 +137,29 @@ const Home = () => {
       </div>
 
       <div style={{ marginTop: "22.5px" }} className={css.dividerA}></div>
+
+      <div className={css.cardHolderDivOuter}>
+        <div>
+          <div className={css.bigCardDiv}></div>
+          <div className={css.smallCardDiv}></div>
+        </div>
+        <div>
+          <div className={css.smallCardDiv}></div>
+          <div className={css.bigCardDiv}></div>
+        </div>
+        <div>
+          <div className={css.bigCardDiv}></div>
+          <div className={css.smallCardDiv}></div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+
+      <h1 style={{ width: "85%" }} className={css.heading}>
+        Transform Your Business Into Brand With Stunning Iconic Logo design
+      </h1>
+
+      <div className={css.getStartedBtn}>GET STARTED NOW</div>
     </div>
   );
 };

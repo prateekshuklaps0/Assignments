@@ -12,6 +12,7 @@
   word-spacing: -5px;
   letter-spacing: -1.5px;
   margin-top: 45px;
+  line-height: 55px;
 }
 .subHeading {
   margin: 0;
@@ -22,7 +23,7 @@
   font-weight: 400;
   font-size: 22px;
   word-spacing: -1.5px;
-  margin-top: -2.5px;
+  margin-top: 22.5px;
 }
 .topContDiv {
   width: 87.5%;
@@ -220,4 +221,35 @@
     word-spacing: -1.5px;
     margin-top: -2.5px;
   }
+}
+.cardHolderDivOuter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82.5%;
+  margin: 45px auto 0px;
+  gap: 32.5px;
+
+  > div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 32.5px;
+  }
+}
+.bigCardDiv {
+  height: 550px;
+  background: var(--primary);
+  border: 3px solid var(--blackB);
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
+}
+.smallCardDiv {
+  height: 400px;
+  background: var(--primary);
+  border: 3px solid var(--blackB);
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
 }
