@@ -13,6 +13,13 @@
   letter-spacing: -1.5px;
   margin-top: 45px;
   line-height: 55px;
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .subHeading {
   margin: 0;
@@ -57,7 +64,6 @@
   }
 }
 .videoOuterDiv {
-  min-width: 600px;
   width: 600px;
   height: 375px;
   border-radius: 10px;
@@ -151,6 +157,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
   width: 92.5%;
   margin: 75px auto 0px;
 }
@@ -163,13 +170,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
+  flex: 1;
 }
 .cardTestimonial {
   border: 2px solid var(--blackB);
   background: var(--pureWhite);
   border-radius: 10px;
-  width: 475px;
+  width: 46%;
+  /* width: 40%; */
+  /* width: 475px; */
+  /* width: 375px; */
   padding: 20px;
 
   > div:nth-of-type(1) {
@@ -212,6 +222,8 @@
   justify-content: space-between;
   margin: 22.5px auto 0px;
   width: 87.5%;
+  padding-bottom: 11.5px;
+  overflow: auto;
 
   > div {
     border-radius: 10px;
@@ -306,14 +318,14 @@
   background: var(--orangeB);
   border-radius: 10px;
   width: 100%;
-  padding: 10px 0px 0px;
+  padding: 15px 0px 0px;
 }
 .actualMostPopularDiv {
   display: flex;
   align-items: center;
   gap: 20px;
   width: fit-content;
-  margin: 0px auto 7.5px;
+  margin: 0px auto 15px;
 
   > img {
     mix-blend-mode: multiply;
@@ -326,6 +338,7 @@
     font-weight: 700;
     letter-spacing: -1.5px;
     word-spacing: -1.5px;
+    line-height: 35px;
   }
 }
 .typePriceDiv {
@@ -335,7 +348,7 @@
   padding: 7.5px 0px;
   text-align: center;
   margin: auto;
-  width: 370px;
+  width: 100%;
 
   > p {
     font-size: 27.5px;
@@ -465,7 +478,7 @@
 
   img {
     mix-blend-mode: multiply;
-    width: 375px;
+    width: 100%;
   }
   h1 {
     margin: 0;
@@ -506,6 +519,7 @@
   place-items: center;
   height: 350px;
   padding: 0px 7.5px;
+  background: var(--pureWhite);
 
   h1 {
     padding: 0;

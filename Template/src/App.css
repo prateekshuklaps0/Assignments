@@ -41,3 +41,13 @@
   font-family: var(--fontA);
   color: var(--blackB);
 }
+::-webkit-scrollbar {
+  height: 3.5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--orangeB);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 50px;
+}

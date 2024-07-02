@@ -146,7 +146,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: "22.5px" }} className={css.dividerA}></div>
+      <div style={{ marginTop: "10px" }} className={css.dividerA}></div>
 
       <div className={css.cardHolderDivOuter}>
         <div>
