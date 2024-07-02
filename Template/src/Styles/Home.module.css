@@ -164,22 +164,43 @@
     font-weight: 400;
     word-spacing: -2.5px;
   }
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .topBottomContDivOuter {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 60px;
   width: 85%;
   margin: 100px auto 0px;
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .topBottomContDivOuter > div {
+  margin: auto;
+  width: 275px;
   box-shadow: var(--shadowB);
   background: var(--pureWhite);
   border: 2px solid var(--blackB);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 275px;
   gap: 12.5px;
   padding: 15px 10px;
   border-radius: 10px;
@@ -194,6 +215,15 @@
     word-spacing: -2.5px;
     line-height: 30px;
   }
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .dividerA {
   width: 70%;
@@ -201,6 +231,15 @@
   height: 4px;
   border-radius: 100%;
   background: var(--orangeB);
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .dividerB {
   width: 70%;
@@ -208,6 +247,15 @@
   height: 4px;
   border-radius: 100%;
   background: var(--blackB);
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .testimonialsOuterDiv {
   display: flex;
