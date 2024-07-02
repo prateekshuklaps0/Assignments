@@ -186,18 +186,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "75px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <h1 style={{ width: "85%" }} className={css.heading}>
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
-      <h1 className={css.subHeading}>
-        100% Money-Back Guarantee On All Plans.
-      </h1>
-
-      <div className={css.moneyBackDivOuter}>
+      <div className={css.moneybackContOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
+        <p>100% Money-Back Guarantee On All Plans.</p>
       </div>
 
       <div className={css.outerPricingDiv}>

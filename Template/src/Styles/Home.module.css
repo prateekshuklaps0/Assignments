@@ -381,7 +381,7 @@
   align-items: center;
   justify-content: space-between;
   width: 75%;
-  margin: -27.5px auto 0px;
+  margin: -25px auto 85px;
 
   > div {
     display: flex;
@@ -396,16 +396,43 @@
     font-size: 26px;
     word-spacing: -2.5px;
     letter-spacing: -0.5px;
+    line-height: 35px;
+  }
+
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
-.moneyBackDivOuter {
-  margin: -57.5px auto 0px;
+.moneybackContOuter {
+  margin: auto;
   width: 70%;
+  display: flex;
+  gap: 125px;
 
   img {
     mix-blend-mode: multiply;
     width: 160px;
     height: 160px;
+    margin-top: 10px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 24px;
+    word-spacing: -1.5px;
+    letter-spacing: 0px;
+    margin-top: 30px;
+    line-height: 35px;
+    white-space: nowrap;
   }
 }
 .outerPricingDiv {
@@ -430,6 +457,7 @@
   gap: 20px;
   width: fit-content;
   margin: 0px auto 15px;
+  padding: 0px 15px;
 
   > img {
     mix-blend-mode: multiply;
@@ -443,6 +471,16 @@
     letter-spacing: -1.5px;
     word-spacing: -1.5px;
     line-height: 35px;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .typePriceDiv {
@@ -452,10 +490,10 @@
   padding: 7.5px 0px;
   text-align: center;
   margin: auto;
-  width: 100%;
+  width: 90%;
 
   > p {
-    font-size: 27.5px;
+    font-size: 25px;
     font-weight: 700;
   }
 }
@@ -678,7 +716,7 @@
   width: 92%;
   background: var(--orangeB);
   border-radius: 10px;
-  padding: 50px 0px 70px;
+  padding: 50px 0px 0.5px;
 
   h1 {
     margin: 0;
@@ -700,6 +738,18 @@
   .featuresDivOuter {
     width: 82.5%;
     margin-top: 35px;
+  }
+  @media (max-width: 1250px) {
+    .featuresDivOuter {
+      width: 97.5%;
+      margin-top: 35px;
+    }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .dividerC {
