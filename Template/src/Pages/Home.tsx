@@ -197,7 +197,7 @@ const Home = () => {
         <p>100% Money-Back Guarantee On All Plans.</p>
       </div>
 
-      <div className={css.outerPricingDiv}>
+      {/* <div className={css.outerPricingDiv}>
         <div className={css.priceCardDiv}>
           <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
             <p>STARTER</p>
@@ -287,7 +287,7 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
 

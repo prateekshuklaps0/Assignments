@@ -421,7 +421,6 @@
     height: 160px;
     margin-top: 10px;
   }
-
   p {
     margin: 0;
     padding: 0;
@@ -433,6 +432,12 @@
     margin-top: 30px;
     line-height: 35px;
     white-space: nowrap;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .outerPricingDiv {
@@ -650,6 +655,15 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 75px 220px;
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .benefitsCardDiv {
   margin: auto;
@@ -685,6 +699,17 @@
     margin-top: 25px;
     line-height: 30px;
     padding: 0px 17.5px;
+  }
+
+  @media (max-width: 1250px) {
+    height: auto;
+    padding: 20px 7.5px;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .faqOuter {
