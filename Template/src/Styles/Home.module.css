@@ -28,9 +28,18 @@
   margin: auto;
   width: fit-content;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 24px;
   word-spacing: -1.5px;
-  margin-top: 22.5px;
+  letter-spacing: 0px;
+  margin-top: 30px;
+  line-height: 35px;
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .topContDiv {
   width: 87.5%;
@@ -40,11 +49,31 @@
   justify-content: space-between;
   gap: 90px;
   margin-top: 75px;
+
+  @media (max-width: 1250px) {
+    gap: 60px;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .topContDiv > div:nth-of-type(1) {
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .topContDiv > div:nth-of-type(1) > div {
   border: 2px solid var(--blackB);
@@ -59,12 +88,21 @@
   box-shadow: var(--shadowB);
 
   p {
-    line-height: 25px;
+    line-height: 30px;
     text-align: center;
+  }
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .videoOuterDiv {
-  width: 600px;
+  cursor: pointer;
+  width: 45%;
   height: 375px;
   border-radius: 10px;
   border: 3px solid var(--blackB);
@@ -75,6 +113,15 @@
 
   svg {
     font-size: 160px;
+  }
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .getStartedBtn {
@@ -91,6 +138,15 @@
   font-weight: 600;
   word-spacing: -2px;
   padding: 20px 60px;
+
+  @media (max-width: 1250px) {
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .satisfiedCustDiv {
   display: flex;
@@ -295,7 +351,7 @@
   }
 }
 .moneyBackDivOuter {
-  margin: -65px auto 0px;
+  margin: -57.5px auto 0px;
   width: 70%;
 
   img {
@@ -307,7 +363,7 @@
 .outerPricingDiv {
   display: flex;
   justify-content: space-between;
-  margin: -50px auto 0px;
+  margin: -40px auto 0px;
   width: 90%;
   gap: 40px;
 }
