@@ -13,6 +13,7 @@
   letter-spacing: -1.5px;
   margin-top: 45px;
   line-height: 55px;
+  width: 85%;
 
   @media (max-width: 1250px) {
     width: 90%;
@@ -27,7 +28,6 @@
   }
 }
 .subHeading {
-  margin: 0;
   padding: 0;
   text-align: center;
   margin: auto;
@@ -36,15 +36,15 @@
   font-size: 24px;
   word-spacing: -1.5px;
   letter-spacing: 0px;
-  margin-top: 30px;
   line-height: 35px;
+  margin: 30px auto 75px;
 
   @media (max-width: 1250px) {
     width: 90%;
   }
   @media (max-width: 992px) {
     font-size: 24px;
-    margin-top: 25px;
+    margin: 25px auto 60px;
   }
   @media (max-width: 768px) {
   }
@@ -58,7 +58,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 90px;
-  margin-top: 75px;
 
   @media (max-width: 1250px) {
     gap: 60px;
@@ -66,7 +65,6 @@
   @media (max-width: 992px) {
     width: 90%;
     gap: 40px;
-    margin-top: 60px;
   }
   @media (max-width: 768px) {
   }
@@ -306,12 +304,12 @@
   justify-content: space-between;
   gap: 30px;
   width: 92.5%;
-  margin: 75px auto 100px;
+  margin: 0px auto 100px;
 
   @media (max-width: 992px) {
     gap: 10px;
     width: 95%;
-    margin: 65px auto 85px;
+    margin: 0px auto 85px;
   }
   @media (max-width: 768px) {
   }
@@ -615,16 +613,23 @@
 .outerPricingDiv {
   display: flex;
   justify-content: space-between;
-  margin: -40px auto 0px;
+  margin: -40px auto 150px;
   width: 90%;
   gap: 40px;
 
   @media (max-width: 992px) {
+    width: 85%;
     flex-direction: column;
+    margin: -40px auto 100px;
 
     > div:nth-of-type(2),
     > div:nth-of-type(4) {
       display: none;
+    }
+    > div:nth-of-type(3) {
+      margin: auto;
+      width: 375px;
+      margin-top: 70px;
     }
   }
   @media (max-width: 768px) {
@@ -634,6 +639,7 @@
 }
 .lowScreenDivOuter {
   display: none;
+  gap: 40px;
 
   @media (max-width: 992px) {
     display: flex;
@@ -641,13 +647,6 @@
 }
 .priceCardDiv {
   flex: 1;
-
-  @media (max-width: 992px) {
-  }
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 480px) {
-  }
 }
 .mostPopularDiv {
   background: var(--orangeB);
@@ -656,6 +655,7 @@
   padding: 15px 0px 0px;
 
   @media (max-width: 992px) {
+    padding: 12.5px 0px 0px;
   }
   @media (max-width: 768px) {
   }
@@ -668,7 +668,6 @@
   gap: 20px;
   width: fit-content;
   margin: 0px auto 15px;
-  padding: 0px 15px;
 
   > img {
     mix-blend-mode: multiply;
@@ -686,6 +685,17 @@
   }
 
   @media (max-width: 992px) {
+    gap: 15px;
+    margin: 0px auto 12.5px;
+
+    > img {
+      width: 140px;
+    }
+    > p {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
   }
   @media (max-width: 768px) {
   }
@@ -707,6 +717,12 @@
   }
 
   @media (max-width: 992px) {
+    padding: 7px 0px;
+
+    > p {
+      font-size: 24px;
+      font-weight: 600;
+    }
   }
   @media (max-width: 768px) {
   }
@@ -756,6 +772,28 @@
   }
 
   @media (max-width: 992px) {
+    padding: 40px 15px 0px;
+    height: 90%;
+
+    h1 {
+      line-height: 35px;
+      font-weight: 800;
+      font-size: 28px;
+    }
+    hr {
+      margin: 37.5px auto 32.5px;
+      width: 82.5%;
+    }
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      word-spacing: -1px;
+      margin-top: 5px;
+    }
+    .boldPriceFeature {
+      font-weight: 800;
+    }
   }
   @media (max-width: 768px) {
   }
@@ -763,7 +801,7 @@
   }
 }
 .dontLikeOuterDiv {
-  margin: auto;
+  margin: 0px auto 22.5px;
   width: 87.5%;
   display: flex;
   align-items: center;
@@ -904,6 +942,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .processCardDiv {
   background: var(--orangeB);
@@ -936,6 +981,13 @@
     margin-top: 30px;
     line-height: 35px;
     padding: 0px 17.5px;
+  }
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .benefitsOuter {

@@ -114,7 +114,7 @@ const Home = () => {
         creatively crafted logo.
       </h1>
 
-      <div style={{ marginTop: "60px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <div className={css.categoryHolderDiv}>
         {[
@@ -165,7 +165,7 @@ const Home = () => {
 
       <div className={css.dividerA}></div>
 
-      <h1 style={{ width: "85%" }} className={css.heading}>
+      <h1 className={css.heading}>
         Transform Your Business Into Brand With Stunning Iconic Logo design
       </h1>
 
@@ -188,7 +188,7 @@ const Home = () => {
 
       <div className={css.dividerA}></div>
 
-      <h1 style={{ width: "85%" }} className={css.heading}>
+      <h1 className={css.heading}>
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
@@ -335,7 +335,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "160px" }} className={css.dividerB}></div>
+      <div className={css.dividerB}></div>
 
       <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
@@ -374,11 +374,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "22.5px" }} className={css.dividerB}></div>
+      <div className={css.dividerB}></div>
 
-      <h1 style={{ marginTop: "100px" }} className={css.heading}>
-        Logo Designing Process
-      </h1>
+      <h1 className={css.heading}>Logo Designing Process</h1>
 
       <div className={css.processOuter}>
         {[
