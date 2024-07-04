@@ -178,8 +178,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  width: 85%;
+  gap: 32.5px;
+  width: 87.5%;
   margin: 100px auto 0px;
 
   @media (max-width: 1250px) {
@@ -264,26 +264,47 @@
   gap: 30px;
   width: 92.5%;
   margin: 75px auto 0px;
+
+  @media (max-width: 992px) {
+    gap: 10px;
+    width: 95%;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .arrowsTestimonials {
   font-size: 100px;
   color: var(--blackB);
   cursor: pointer;
+
+  @media (max-width: 992px) {
+    min-width: 60px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .testimonialsCardsHolderDiv {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
+
+  @media (max-width: 992px) {
+    gap: 30px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .cardTestimonial {
   border: 2px solid var(--blackB);
   background: var(--pureWhite);
   border-radius: 10px;
   width: 46%;
-  /* width: 40%; */
-  /* width: 475px; */
-  /* width: 375px; */
   padding: 20px;
 
   > div:nth-of-type(1) {
@@ -292,6 +313,20 @@
     align-items: center;
     gap: 30px;
   }
+
+  @media (max-width: 992px) {
+    border-radius: 10px;
+    width: auto;
+    padding: 20px;
+
+    > div:nth-of-type(1) {
+      gap: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .imgTestimonialDiv {
   background: var(--primary);
@@ -299,6 +334,15 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
+
+  @media (max-width: 992px) {
+    width: 80px;
+    height: 80px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .nameTestimonialDivOuter {
   p {
@@ -311,6 +355,21 @@
     width: 170px;
     mix-blend-mode: multiply;
   }
+
+  @media (max-width: 992px) {
+    p {
+      font-size: 24.5px;
+      line-height: 30px;
+      width: fit-content;
+    }
+    img {
+      width: 130px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .textTestimonial {
   font-size: 24px;
@@ -319,6 +378,17 @@
   line-height: 30px;
   margin: 50px auto 20px;
   width: 90%;
+
+  @media (max-width: 992px) {
+    font-size: 22px;
+    line-height: 27.5px;
+    margin: 30px auto 15px;
+    width: 95%;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .categoryHolderDiv {
   display: flex;
@@ -433,7 +503,15 @@
     line-height: 35px;
     white-space: nowrap;
   }
+
   @media (max-width: 992px) {
+    width: 85%;
+    gap: 50px;
+
+    img {
+      width: 130px;
+      height: 130px;
+    }
   }
   @media (max-width: 768px) {
   }
@@ -446,15 +524,49 @@
   margin: -40px auto 0px;
   width: 90%;
   gap: 40px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+
+    > div:nth-of-type(2),
+    > div:nth-of-type(4) {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
+}
+.lowScreenDivOuter {
+  display: none;
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
 }
 .priceCardDiv {
   flex: 1;
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .mostPopularDiv {
   background: var(--orangeB);
   border-radius: 10px;
   width: 100%;
   padding: 15px 0px 0px;
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .actualMostPopularDiv {
   display: flex;
@@ -479,8 +591,6 @@
     white-space: nowrap;
   }
 
-  @media (max-width: 1250px) {
-  }
   @media (max-width: 992px) {
   }
   @media (max-width: 768px) {
@@ -500,6 +610,13 @@
   > p {
     font-size: 25px;
     font-weight: 700;
+  }
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .priceDivs {
@@ -543,6 +660,13 @@
   .boldPriceFeature {
     font-weight: 900;
   }
+
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .dontLikeOuterDiv {
   margin: auto;
@@ -562,7 +686,6 @@
     margin-top: 50px;
     line-height: 55px;
   }
-
   > img:nth-of-type(1) {
     width: 340px;
     height: 340px;
@@ -586,6 +709,53 @@
     font-style: italic;
     font-weight: 700;
   }
+
+  @media (max-width: 1250px) {
+    width: 87.5%;
+    gap: 50px;
+
+    > img:nth-of-type(1) {
+      width: 240px;
+      height: 240px;
+    }
+    > div > h1:nth-of-type(1) {
+      font-size: 37.5px;
+      word-spacing: -2.5px;
+      letter-spacing: -1px;
+      margin-top: 50px;
+      white-space: nowrap;
+    }
+    h1 {
+      font-size: 22.5px;
+      margin-top: 20px;
+    }
+    h1 > em {
+      font-weight: 600;
+    }
+  }
+  @media (max-width: 992px) {
+    width: 90%;
+    gap: 30px;
+
+    > img:nth-of-type(1) {
+      width: 160px;
+      height: 160px;
+    }
+    > div > h1:nth-of-type(1) {
+      font-size: 32.5px;
+    }
+    h1 {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    h1 > em {
+      font-weight: 500;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .signatureDiv {
   img {
@@ -606,6 +776,31 @@
     margin-top: -20px;
     letter-spacing: -1px;
     word-spacing: -1px;
+  }
+
+  @media (max-width: 1250px) {
+    img {
+      width: 200px;
+      margin-top: 30px;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 26px;
+      margin-top: -8px;
+      letter-spacing: -0.5px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 26px;
+      margin-top: -17.5px;
+      letter-spacing: -0.5px;
+    }
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .processOuter {
@@ -656,9 +851,8 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 75px 220px;
 
-  @media (max-width: 1250px) {
-  }
   @media (max-width: 992px) {
+    gap: 20px;
   }
   @media (max-width: 768px) {
   }
@@ -702,7 +896,7 @@
   }
 
   @media (max-width: 1250px) {
-    height: auto;
+    height: 100%;
     padding: 20px 7.5px;
   }
   @media (max-width: 992px) {

@@ -5,6 +5,18 @@ import Navbar from "./Components/Navbar";
 // import { useEffect } from "react";
 
 function App() {
+  /*
+file:///C:/Users/Prateek/Downloads/webpage.html
+
+http://localhost:3000/
+
+file:///C:/Users/Prateek/Downloads/webpage.pdf
+
+http://localhost:3000/
+
+https://chatgpt.com/c/bb3447ec-6314-4ed6-9ab6-4e87d509c2b9
+*/
+
   // const handleContextmenu = (e: any) => {
   //   e.preventDefault();
   // };
