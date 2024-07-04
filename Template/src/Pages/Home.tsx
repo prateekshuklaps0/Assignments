@@ -409,7 +409,7 @@ const Home = () => {
 
       <div className={css.dividerB}></div>
 
-      <h1 style={{ marginTop: "75px" }} className={css.heading}>
+      <h1 className={css.heading}>
         Some Exclusive Benefits You Get Only With Us
       </h1>
 
@@ -444,9 +444,7 @@ const Home = () => {
 
       <div className={css.dividerB}></div>
 
-      <h1 style={{ marginTop: "75px" }} className={css.heading}>
-        Frequently Asked Questions
-      </h1>
+      <h1 className={css.heading}>Frequently Asked Questions</h1>
 
       <div className={css.faqOuter}>
         {[
