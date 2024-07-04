@@ -14,6 +14,9 @@
   margin-top: 45px;
   line-height: 55px;
 
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
   @media (max-width: 992px) {
     font-size: 44px;
     margin-top: 42.5px;
@@ -36,6 +39,9 @@
   margin-top: 30px;
   line-height: 35px;
 
+  @media (max-width: 1250px) {
+    width: 90%;
+  }
   @media (max-width: 992px) {
     font-size: 24px;
     margin-top: 25px;
@@ -207,7 +213,7 @@
   justify-content: space-between;
   gap: 32.5px;
   width: 87.5%;
-  margin: 100px auto 0px;
+  margin: 100px auto;
 
   @media (max-width: 1250px) {
     flex-wrap: wrap;
@@ -215,7 +221,7 @@
   @media (max-width: 992px) {
     gap: 35px;
     width: 77.5%;
-    margin: 75px auto 0px;
+    margin: 75px auto 85px;
   }
   @media (max-width: 768px) {
   }
@@ -271,8 +277,6 @@
   border-radius: 100%;
   background: var(--orangeB);
 
-  @media (max-width: 1250px) {
-  }
   @media (max-width: 992px) {
   }
   @media (max-width: 768px) {
@@ -302,11 +306,12 @@
   justify-content: space-between;
   gap: 30px;
   width: 92.5%;
-  margin: 75px auto 0px;
+  margin: 75px auto 100px;
 
   @media (max-width: 992px) {
     gap: 10px;
     width: 95%;
+    margin: 65px auto 85px;
   }
   @media (max-width: 768px) {
   }
@@ -319,7 +324,7 @@
   cursor: pointer;
 
   @media (max-width: 992px) {
-    min-width: 60px;
+    min-width: 40px;
   }
   @media (max-width: 768px) {
   }
@@ -354,12 +359,11 @@
   }
 
   @media (max-width: 992px) {
-    border-radius: 10px;
     width: auto;
-    padding: 20px;
+    padding: 17.5px;
 
     > div:nth-of-type(1) {
-      gap: 10px;
+      gap: 15px;
     }
   }
   @media (max-width: 768px) {
@@ -371,12 +375,16 @@
   background: var(--primary);
   border: 3px solid var(--blackB);
   border-radius: 50%;
+  min-width: 120px;
+  min-height: 120px;
   width: 120px;
   height: 120px;
 
   @media (max-width: 992px) {
-    width: 80px;
-    height: 80px;
+    min-width: 85px;
+    min-height: 85px;
+    width: 85px;
+    height: 85px;
   }
   @media (max-width: 768px) {
   }
@@ -420,7 +428,7 @@
 
   @media (max-width: 992px) {
     font-size: 22px;
-    line-height: 27.5px;
+    line-height: 25px;
     margin: 30px auto 15px;
     width: 95%;
   }
@@ -433,10 +441,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 22.5px auto 0px;
+  overflow: auto;
+  margin: 22.5px auto 10px;
   width: 87.5%;
   padding-bottom: 11.5px;
-  overflow: auto;
 
   > div {
     border-radius: 10px;
@@ -450,8 +458,25 @@
     width: fit-content;
     font-weight: 400;
     font-size: 22px;
-    word-spacing: -1.5px;
     margin-top: -2.5px;
+  }
+
+  @media (max-width: 992px) {
+    width: 90%;
+    margin: 20px auto 10px;
+
+    > div {
+      border-radius: 8px;
+      padding: 3px 15px;
+    }
+    > div > p {
+      font-size: 20px;
+      margin-top: -2px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .cardHolderDivOuter {
@@ -459,7 +484,7 @@
   align-items: center;
   justify-content: space-between;
   width: 82.5%;
-  margin: 45px auto 0px;
+  margin: 45px auto 100px;
   gap: 32.5px;
 
   > div {
@@ -467,6 +492,20 @@
     display: flex;
     flex-direction: column;
     gap: 32.5px;
+  }
+
+  @media (max-width: 992px) {
+    width: 85%;
+    margin: 42.5px auto 85px;
+    gap: 27.5px;
+
+    > div {
+      gap: 27.5px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
   }
 }
 .bigCardDiv {
@@ -476,6 +515,14 @@
   border-radius: 10px;
   margin: auto;
   width: 100%;
+
+  @media (max-width: 992px) {
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .smallCardDiv {
   height: 400px;
@@ -484,6 +531,14 @@
   border-radius: 10px;
   margin: auto;
   width: 100%;
+
+  @media (max-width: 992px) {
+    height: 250px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .featuresDivOuter {
   display: flex;

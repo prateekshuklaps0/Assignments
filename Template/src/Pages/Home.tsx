@@ -70,7 +70,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <h1 className={css.heading}>Testimonials</h1>
 
@@ -103,7 +103,7 @@ const Home = () => {
         <RightArrow className={css.arrowsTestimonials} />
       </div>
 
-      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <h1 className={css.heading}>
         Creative Logo Designs That Win People’s Heart
@@ -146,7 +146,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div style={{ marginTop: "10px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <div className={css.cardHolderDivOuter}>
         <div>
@@ -163,7 +163,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "100px" }} className={css.dividerA}></div>
+      <div className={css.dividerA}></div>
 
       <h1 style={{ width: "85%" }} className={css.heading}>
         Transform Your Business Into Brand With Stunning Iconic Logo design
