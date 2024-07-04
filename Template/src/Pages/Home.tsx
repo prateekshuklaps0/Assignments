@@ -76,7 +76,7 @@ const Home = () => {
 
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
 
-      <div className={css.testimonialsOuterDiv}>
+      {/* <div className={css.testimonialsOuterDiv}>
         <LeftArrow className={css.arrowsTestimonials} />
         <div className={css.testimonialsCardsHolderDiv}>
           {new Array(2)
@@ -101,7 +101,7 @@ const Home = () => {
             ))}
         </div>
         <RightArrow className={css.arrowsTestimonials} />
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
@@ -192,10 +192,10 @@ const Home = () => {
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
-      <div className={css.moneybackContOuter}>
+      {/* <div className={css.moneybackContOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <p>100% Money-Back Guarantee On All Plans.</p>
-      </div>
+      </div> */}
 
       <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>
@@ -337,7 +337,7 @@ const Home = () => {
 
       <div className={css.dividerB}></div>
 
-      <div className={css.dontLikeOuterDiv}>
+      {/* <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
           <h1 style={{ width: "85%" }} className={css.heading}>
@@ -372,7 +372,7 @@ const Home = () => {
             <p>Founder Of Digisurg</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
@@ -413,7 +413,7 @@ const Home = () => {
         Some Exclusive Benefits You Get Only With Us
       </h1>
 
-      <div className={css.benefitsOuter}>
+      {/* <div className={css.benefitsOuter}>
         {[
           {
             head: "Fast Turnaround",
@@ -440,7 +440,7 @@ const Home = () => {
             <p>{benefitItem?.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 

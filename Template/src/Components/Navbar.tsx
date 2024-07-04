@@ -2,13 +2,22 @@ import css from "../Styles/Navbar.module.css";
 import Logo from "../Assets/Logo.png";
 
 import { useState } from "react";
+import { SlMenu as HamburgerMenu } from "react-icons/sl";
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   const [currNavMenu, setCurrNavMenu] = useState("portfolio");
 
   return (
     <div className={css.navOuter}>
-      <img src={Logo} alt="Logo" className={css.logoOuter} />
+      <HamburgerMenu
+        className={css.hamburgerMenuCss}
+        onClick={() => setOpenMenu((prev) => !prev)}
+      />
+
+      {/* <div className={css.menuOuter}></div> */}
+
+      <img src={Logo} alt="Logo" className={css.logoCss} />
 
       <div className={css.navMenuCont}>
         {[
