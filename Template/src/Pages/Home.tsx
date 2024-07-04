@@ -496,11 +496,8 @@ const Home = () => {
 
       <p className={css.footerText}>
         This site is not a part of the Facebook website or Facebook Inc.
-        Additionally, This site is NOT endorsed by
-      </p>
-
-      <p className={css.footerText}>
-        Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+        Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK
+        is a trademark of FACEBOOK, Inc.
       </p>
 
       <div className={css.footerDiv}>
