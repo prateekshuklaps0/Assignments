@@ -6,11 +6,24 @@
   border-bottom: 0.095em solid;
   border-color: var(--blackA);
   padding: 27.5px 15px 22.5px;
+
+  @media (max-width: 992px) {
+    padding: 27.5px 15px 25px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .logoOuter {
+  cursor: pointer;
   mix-blend-mode: multiply;
   width: 125px;
-  cursor: pointer;
+
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .navMenuCont {
   display: flex;
@@ -28,17 +41,37 @@
     position: relative;
     z-index: 100;
     cursor: pointer;
+    white-space: nowrap;
   }
-}
-.activeNavMenu::before {
-  content: "";
-  position: absolute;
-  margin: 20px 0px 0px 13px;
-  background: var(--orangeB);
-  border-radius: 100px;
-  width: 92.5%;
-  height: 11px;
-  z-index: -1;
+  .activeNavMenu::before {
+    content: "";
+    position: absolute;
+    background: var(--orangeB);
+    border-radius: 100px;
+    z-index: -1;
+    width: 92.5%;
+    height: 11px;
+    margin: 20px 0px 0px 13px;
+  }
+
+  @media (max-width: 992px) {
+    margin-left: 0px;
+    max-width: 52.5%;
+
+    > p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+
+    .activeNavMenu::before {
+      margin: 12.5px 0px 0px 13px;
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
 .getStartedBtn {
   box-shadow: var(--shadowA);
@@ -53,4 +86,17 @@
   font-weight: 600;
   word-spacing: -2px;
   padding: 10px 30px;
+
+  @media (max-width: 992px) {
+    border-radius: 8px;
+    margin-right: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    word-spacing: -1.5px;
+    padding: 8px 27.5px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+  }
 }
