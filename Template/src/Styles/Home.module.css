@@ -701,10 +701,27 @@
 
   @media (max-width: 1250px) {
     width: 90%;
+    flex-wrap: wrap;
+    margin: 25px auto 75px;
+    gap: 17.5px;
+
+    > div {
+      margin: auto;
+    }
   }
   @media (max-width: 768px) {
-    > div {
-      flex-wrap: wrap;
+    width: 97.5%;
+    gap: 15px;
+
+    > div > svg {
+      font-size: 37.5px;
+    }
+    > div > p {
+      font-weight: 500;
+      font-size: 24px;
+      word-spacing: -2px;
+      letter-spacing: -0.5px;
+      line-height: 32.5px;
     }
   }
   @media (max-width: 480px) {
