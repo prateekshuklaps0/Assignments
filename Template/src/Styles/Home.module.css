@@ -363,8 +363,12 @@
     margin: 0px auto 85px;
   }
   @media (max-width: 768px) {
+    gap: 9px;
+    margin: 0px auto 60px;
   }
   @media (max-width: 480px) {
+    gap: 8px;
+    margin: 0px auto 45px;
   }
 }
 .arrowsTestimonials {
@@ -375,9 +379,9 @@
   @media (max-width: 992px) {
     min-width: 40px;
   }
-  @media (max-width: 768px) {
-  }
   @media (max-width: 480px) {
+    min-width: 0px;
+    font-size: 400px;
   }
 }
 .testimonialsCardsHolderDiv {
@@ -389,6 +393,8 @@
     gap: 30px;
   }
   @media (max-width: 768px) {
+    overflow: auto;
+    padding-bottom: 22.5px;
   }
   @media (max-width: 480px) {
   }
@@ -416,8 +422,12 @@
     }
   }
   @media (max-width: 768px) {
+    border-radius: 9px;
+    padding: 15px;
   }
   @media (max-width: 480px) {
+    border-radius: 8px;
+    padding: 12.5px;
   }
 }
 .imgTestimonialDiv {
@@ -436,8 +446,16 @@
     height: 85px;
   }
   @media (max-width: 768px) {
+    min-width: 82.5px;
+    min-height: 82.5px;
+    width: 82.5px;
+    height: 82.5px;
   }
   @media (max-width: 480px) {
+    min-width: 80px;
+    min-height: 80px;
+    width: 80px;
+    height: 80px;
   }
 }
 .nameTestimonialDivOuter {
@@ -463,8 +481,23 @@
     }
   }
   @media (max-width: 768px) {
+    p {
+      font-size: 24px;
+    }
+    img {
+      width: 115px;
+    }
   }
   @media (max-width: 480px) {
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      line-height: 27.5px;
+    }
+    img {
+      width: 105px;
+    }
   }
 }
 .textTestimonial {
@@ -476,14 +509,19 @@
   width: 90%;
 
   @media (max-width: 992px) {
+    width: 95%;
     font-size: 22px;
     line-height: 25px;
     margin: 30px auto 15px;
-    width: 95%;
   }
   @media (max-width: 768px) {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    margin: 27.5px auto 12.5px;
   }
   @media (max-width: 480px) {
+    font-size: 18.5px;
+    margin: 22.5px auto 10px;
   }
 }
 .categoryHolderDiv {
