@@ -562,8 +562,30 @@
     }
   }
   @media (max-width: 768px) {
+    margin: 17.5px auto 9px;
+    padding-bottom: 10px;
+
+    > div {
+      border-radius: 7.5px;
+      padding: 3px 13.5px;
+    }
+    > div > p {
+      font-size: 19.25px;
+      margin-top: -4px;
+    }
   }
   @media (max-width: 480px) {
+    margin: 15px auto 8px;
+    padding-bottom: 8px;
+
+    > div {
+      border-radius: 6px;
+      padding: 2px 12px;
+    }
+    > div > p {
+      font-size: 18.5px;
+      margin-top: -6px;
+    }
   }
 }
 .cardHolderDivOuter {
@@ -591,6 +613,23 @@
     }
   }
   @media (max-width: 768px) {
+    width: 85%;
+    margin: 42.5px auto 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    > div {
+      margin: auto;
+      gap: 32.5px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 624px) {
+    width: 87.5%;
+
+    > div {
+      gap: 30px;
+    }
   }
   @media (max-width: 480px) {
   }
@@ -607,6 +646,11 @@
     height: 400px;
   }
   @media (max-width: 768px) {
+    height: 375px;
+    border-radius: 8.25px;
+  }
+  @media (max-width: 624px) {
+    height: 350px;
   }
   @media (max-width: 480px) {
   }
@@ -623,6 +667,11 @@
     height: 250px;
   }
   @media (max-width: 768px) {
+    height: 225px;
+    border-radius: 8.25px;
+  }
+  @media (max-width: 624px) {
+    height: 200px;
   }
   @media (max-width: 480px) {
   }
