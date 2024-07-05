@@ -99,6 +99,113 @@
   @media (max-width: 480px) {
   }
 }
+.menuOverlay {
+  display: none;
+  transition: all 0.25s ease;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--blackC);
+  }
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
+}
+.menuOuter {
+  transition: all 0.25s ease;
+
+  @media (max-width: 768px) {
+    width: 400px;
+    z-index: 500;
+    height: 100%;
+    background: var(--pureWhite);
+    border-right: 4px solid var(--primary);
+    border-top-right-radius: 12.5px;
+    border-bottom-right-radius: 12.5px;
+
+    > div:nth-of-type(1) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    svg:nth-of-type(1) {
+      cursor: pointer;
+      font-size: 30px;
+      margin: 30px 25px;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+  @media (max-width: 480px) {
+    width: 300px;
+    border-left: 4px solid var(--primary);
+    border-right: none;
+    border-top-left-radius: 12.5px;
+    border-bottom-left-radius: 12.5px;
+
+    > div:nth-of-type(1) {
+      flex-direction: row;
+    }
+  }
+}
+.smallMenuLinksCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 22.5px;
+  gap: 20px;
+
+  > p {
+    font-family: var(--fontA);
+    font-size: 26px;
+    font-weight: 500;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .activeNavMenu::before {
+    content: "";
+    position: absolute;
+    background: var(--orangeB);
+    border-radius: 100px;
+    z-index: -1;
+    width: 92.5%;
+    height: 11px;
+    margin: 27.5px 0px 0px 15px;
+  }
+}
+.smallScreenGetStartedBtn {
+  display: none;
+
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 480px) {
+    display: block;
+    box-shadow: var(--shadowA);
+    color: var(--pureWhite);
+    background: var(--blackB);
+    font-family: var(--fontA);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    word-spacing: -2px;
+    padding: 10px 30px;
+    margin: 30px auto 0px;
+  }
+}
 .getStartedBtn {
   box-shadow: var(--shadowA);
   color: var(--pureWhite);

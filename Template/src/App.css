@@ -5,6 +5,7 @@
   --pureBlack: #000000;
   --blackA: #2f3236;
   --blackB: #0f111d;
+  --blackC: #0f111d5f;
   --greyA: #9e9e9e;
   --greyB: #f1f1f1;
   --yellowA: #f7d569;
@@ -20,6 +21,7 @@
   --shadowC: var(--primary) 6px 6px;
   --shadowD: var(--primary) 7.5px 15px;
   --shadowE: var(--primary) 15px 15px;
+  --shadowF: 0px 0px 15px 15px;
 
   /* Fonts */
   --fontA: "Noto Kufi Arabic", sans-serif;
@@ -52,4 +54,7 @@
   background-color: var(--primary);
   border-radius: 50px;
   cursor: pointer;
+}
+.no-scroll {
+  overflow: hidden;
 }
