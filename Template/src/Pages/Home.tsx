@@ -192,10 +192,10 @@ const Home = () => {
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
-      {/* <div className={css.moneybackContOuter}>
+      <div className={css.moneybackContOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <p>100% Money-Back Guarantee On All Plans.</p>
-      </div> */}
+      </div>
 
       <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>

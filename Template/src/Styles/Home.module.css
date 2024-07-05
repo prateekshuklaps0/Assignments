@@ -740,13 +740,13 @@
     margin-top: 10px;
   }
   p {
-    margin: 0;
     padding: 0;
     width: fit-content;
     font-weight: 500;
     font-size: 24px;
     word-spacing: -1.5px;
     letter-spacing: 0px;
+    /* margin: 30px auto 0px; */
     margin-top: 30px;
     line-height: 35px;
     white-space: nowrap;
@@ -762,8 +762,39 @@
     }
   }
   @media (max-width: 768px) {
+    width: 90%;
+    gap: 40px;
+    align-items: center;
+
+    img {
+      width: 115px;
+      height: 115px;
+    }
+    p {
+      font-size: 22px;
+      word-spacing: -1px;
+      letter-spacing: 0.5px;
+      margin-top: 0px;
+      line-height: 30px;
+      white-space: normal;
+    }
   }
   @media (max-width: 480px) {
+    gap: 10px;
+    flex-direction: column;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      word-spacing: -0.5px;
+      letter-spacing: 0px;
+      line-height: 27.5px;
+    }
   }
 }
 .outerPricingDiv {
