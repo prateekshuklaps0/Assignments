@@ -197,7 +197,7 @@ const Home = () => {
         <p>100% Money-Back Guarantee On All Plans.</p>
       </div>
 
-      {/* <div className={css.outerPricingDiv}>
+      <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>
           <div className={css.priceCardDiv}>
             <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
@@ -333,16 +333,14 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
       <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
-          <h1 style={{ width: "85%" }} className={css.heading}>
-            What If I Don’t Like The Designs?
-          </h1>
+          <h1 className={css.heading}>What If I Don’t Like The Designs?</h1>
           <h1>
             Well, this is the most frequent question we get asked. We are so
             confident of our work that we have a down-right 100% Money-back
@@ -378,7 +376,7 @@ const Home = () => {
 
       <h1 className={css.heading}>Logo Designing Process</h1>
 
-      {/* <div className={css.processOuter}>
+      <div className={css.processOuter}>
         {[
           {
             img: Requirement,
@@ -405,7 +403,7 @@ const Home = () => {
             <p>{processItem?.text}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
@@ -446,7 +444,7 @@ const Home = () => {
 
       <h1 className={css.heading}>Frequently Asked Questions</h1>
 
-      <div className={css.faqOuter}>
+      {/* <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
           {
@@ -469,11 +467,11 @@ const Home = () => {
             <img src={Plus} alt="Plus" />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
-      <div className={css.upperFooter}>
+      {/* <div className={css.upperFooter}>
         <h1>Ready To Build A Brand People Remember?</h1>
         <div className={css.getStartedBtn}>START NOW</div>
         <div className={css.featuresDivOuter}>
@@ -490,21 +488,21 @@ const Home = () => {
             <p>Copyright Ownership Transfer</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerC}></div>
 
-      <p className={css.footerText}>
+      {/* <p className={css.footerText}>
         This site is not a part of the Facebook website or Facebook Inc.
         Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK
         is a trademark of FACEBOOK, Inc.
-      </p>
+      </p> */}
 
-      <div className={css.footerDiv}>
+      {/* <div className={css.footerDiv}>
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms Of Service</p>
-      </div>
+      </div> */}
     </div>
   );
 };
