@@ -15,7 +15,7 @@ const Navbar = () => {
         onClick={() => setOpenMenu((prev) => !prev)}
       />
 
-      {/* <div className={css.menuOuter}></div> */}
+      {openMenu && <div className={css.menuOuter}></div>}
 
       <img src={Logo} alt="Logo" className={css.logoCss} />
 
