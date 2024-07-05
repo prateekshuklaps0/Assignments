@@ -376,7 +376,7 @@ const Home = () => {
 
       <h1 className={css.heading}>Logo Designing Process</h1>
 
-      {/* <div className={css.processOuter}>
+      <div className={css.processOuter}>
         {[
           {
             img: Requirement,
@@ -403,7 +403,7 @@ const Home = () => {
             <p>{processItem?.text}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
@@ -444,7 +444,7 @@ const Home = () => {
 
       <h1 className={css.heading}>Frequently Asked Questions</h1>
 
-      {/* <div className={css.faqOuter}>
+      <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
           {
@@ -467,7 +467,7 @@ const Home = () => {
             <img src={Plus} alt="Plus" />
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 

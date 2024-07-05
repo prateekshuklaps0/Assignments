@@ -1466,6 +1466,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
   @media (max-width: 480px) {
+    width: 82.5%;
+    margin: 40px auto 55px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .processCardDiv {
@@ -1537,6 +1540,29 @@
     }
   }
   @media (max-width: 480px) {
+    border-radius: 8px;
+    padding: 12.5px 12.5px 20px;
+
+    img {
+      width: 85%;
+    }
+    h1 {
+      font-size: 25px;
+      margin: 10px auto;
+      letter-spacing: -0.5px;
+      line-height: 30px;
+      font-weight: 600;
+      word-spacing: -3px;
+    }
+    p {
+      font-size: 20px;
+      margin-top: 5px auto;
+      line-height: 27.5px;
+      padding: 0px 7.5px;
+      font-weight: 400;
+      word-spacing: -0.5px;
+      letter-spacing: -0px;
+    }
   }
 }
 .benefitsOuter {
@@ -1657,6 +1683,7 @@
     margin: 30px auto 75px;
   }
   @media (max-width: 480px) {
+    margin: 15px auto 60px;
   }
 }
 .faqCardDiv {
@@ -1706,6 +1733,19 @@
     }
   }
   @media (max-width: 480px) {
+    gap: 12.5px;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27.5px;
+      word-spacing: -1px;
+      letter-spacing: -0.5px;
+      margin: 22.5px 0px 10px;
+    }
+    img {
+      width: 25px;
+    }
   }
 }
 .upperFooter {
