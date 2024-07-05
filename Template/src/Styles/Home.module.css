@@ -1386,8 +1386,13 @@
     gap: 60px;
   }
   @media (max-width: 768px) {
+    width: 92.5%;
+    margin: 40px auto 75px;
+    gap: 50px;
   }
   @media (max-width: 480px) {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .benefitsCardDiv {
@@ -1447,8 +1452,31 @@
     }
   }
   @media (max-width: 768px) {
+    padding: 20px 7.5px;
+    border-radius: 9px;
+    box-shadow: var(--shadowB);
+    height: 100%;
+    padding: 12.5px 7.5px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 32.5px;
+      letter-spacing: -1px;
+      line-height: 37.5px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: -1px;
+      line-height: 27.5px;
+      margin: 17.5px auto 0px;
+      padding: 0px 10px;
+    }
   }
   @media (max-width: 480px) {
+    border-radius: 8px;
+    box-shadow: var(--shadowC);
+    border: 1px solid var(--blackB);
   }
 }
 .faqOuter {
@@ -1460,6 +1488,7 @@
     width: 90%;
   }
   @media (max-width: 768px) {
+    margin: 30px auto 75px;
   }
   @media (max-width: 480px) {
   }
@@ -1496,6 +1525,19 @@
     }
   }
   @media (max-width: 768px) {
+    gap: 15px;
+
+    p {
+      font-size: 22.5px;
+      font-weight: 500;
+      line-height: 30px;
+      word-spacing: -0.5px;
+      letter-spacing: -1px;
+      margin: 25px 0px 12.5px;
+    }
+    img {
+      width: 27.5px;
+    }
   }
   @media (max-width: 480px) {
   }

@@ -444,7 +444,7 @@ const Home = () => {
 
       <h1 className={css.heading}>Frequently Asked Questions</h1>
 
-      {/* <div className={css.faqOuter}>
+      <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
           {
@@ -467,7 +467,7 @@ const Home = () => {
             <img src={Plus} alt="Plus" />
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
