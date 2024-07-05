@@ -30,7 +30,7 @@ const Home = () => {
         See How an iconic logo Can help your Business Memorable!
       </h1>
 
-      {/* <div className={css.topContDiv}>
+      <div className={css.topContDiv}>
         <div>
           {[
             { text: "2500+ Happy Clients" },
@@ -47,7 +47,7 @@ const Home = () => {
         <div className={css.videoOuterDiv}>
           <PlayArrowIcon />
         </div>
-      </div> */}
+      </div>
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
 
@@ -56,7 +56,7 @@ const Home = () => {
         <p>Rated 4.9 by 2500+ satisfied customers</p>
       </div>
 
-      {/* <div className={css.topBottomContDivOuter}>
+      <div className={css.topBottomContDivOuter}>
         {[
           { text: "Quick Time Around", img: QuickAroundIcon },
           { text: "Free Revisions", img: FreeRevisionsIcon },
@@ -68,7 +68,7 @@ const Home = () => {
             <p>{topBottomCont?.text}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerA}></div>
 
