@@ -171,7 +171,7 @@ const Home = () => {
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
 
-      {/* <div className={css.featuresDivOuter}>
+      <div className={css.featuresDivOuter}>
         <div>
           <CheckCircleIcon />
           <p>Quick Turnaround</p>
@@ -184,7 +184,7 @@ const Home = () => {
           <CheckCircleIcon />
           <p>Copyright Ownership Transfer</p>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerA}></div>
 
@@ -192,12 +192,12 @@ const Home = () => {
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
-      {/* <div className={css.moneybackContOuter}>
+      <div className={css.moneybackContOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <p>100% Money-Back Guarantee On All Plans.</p>
-      </div> */}
+      </div>
 
-      {/* <div className={css.outerPricingDiv}>
+      <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>
           <div className={css.priceCardDiv}>
             <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
@@ -333,7 +333,7 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
