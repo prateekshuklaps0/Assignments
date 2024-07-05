@@ -411,7 +411,7 @@ const Home = () => {
         Some Exclusive Benefits You Get Only With Us
       </h1>
 
-      {/* <div className={css.benefitsOuter}>
+      <div className={css.benefitsOuter}>
         {[
           {
             head: "Fast Turnaround",
@@ -438,7 +438,7 @@ const Home = () => {
             <p>{benefitItem?.text}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
