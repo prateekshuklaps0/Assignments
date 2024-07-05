@@ -76,7 +76,7 @@ const Home = () => {
 
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
 
-      {/* <div className={css.testimonialsOuterDiv}>
+      <div className={css.testimonialsOuterDiv}>
         <LeftArrow className={css.arrowsTestimonials} />
         <div className={css.testimonialsCardsHolderDiv}>
           {new Array(2)
@@ -101,7 +101,7 @@ const Home = () => {
             ))}
         </div>
         <RightArrow className={css.arrowsTestimonials} />
-      </div> */}
+      </div>
 
       <div className={css.dividerA}></div>
 
@@ -116,7 +116,7 @@ const Home = () => {
 
       <div className={css.dividerA}></div>
 
-      {/* <div className={css.categoryHolderDiv}>
+      <div className={css.categoryHolderDiv}>
         {[
           "All",
           "Construction",
@@ -144,11 +144,11 @@ const Home = () => {
             <p>{categoryItem}</p>
           </div>
         ))}
-      </div> */}
+      </div>
 
       <div className={css.dividerA}></div>
 
-      {/* <div className={css.cardHolderDivOuter}>
+      <div className={css.cardHolderDivOuter}>
         <div>
           <div className={css.bigCardDiv}></div>
           <div className={css.smallCardDiv}></div>
@@ -161,7 +161,7 @@ const Home = () => {
           <div className={css.bigCardDiv}></div>
           <div className={css.smallCardDiv}></div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerA}></div>
 

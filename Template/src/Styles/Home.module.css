@@ -403,6 +403,8 @@
     height: 3px;
   }
   @media (max-width: 480px) {
+    width: 85%;
+    height: 2.5px;
   }
 }
 .dividerB {
@@ -417,6 +419,8 @@
     height: 3px;
   }
   @media (max-width: 480px) {
+    width: 85%;
+    height: 2.5px;
   }
 }
 .testimonialsOuterDiv {
@@ -438,7 +442,7 @@
   }
   @media (max-width: 480px) {
     gap: 8px;
-    margin: 0px auto 45px;
+    margin: -20px auto 45px;
   }
 }
 .arrowsTestimonials {
@@ -467,6 +471,8 @@
     padding-bottom: 22.5px;
   }
   @media (max-width: 480px) {
+    justify-content: space-evenly;
+    padding-bottom: 20px;
   }
 }
 .cardTestimonial {
@@ -702,6 +708,13 @@
     }
   }
   @media (max-width: 480px) {
+    width: 90%;
+    margin: 40px auto 60px;
+    gap: 15px;
+
+    > div {
+      gap: 15px;
+    }
   }
 }
 .bigCardDiv {
@@ -723,6 +736,9 @@
     height: 350px;
   }
   @media (max-width: 480px) {
+    height: 275px;
+    border-radius: 7.5px;
+    border: 2px solid var(--blackB);
   }
 }
 .smallCardDiv {
@@ -744,6 +760,9 @@
     height: 200px;
   }
   @media (max-width: 480px) {
+    height: 185px;
+    border-radius: 7.5px;
+    border: 2px solid var(--blackB);
   }
 }
 .featuresDivOuter {
