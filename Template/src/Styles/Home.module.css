@@ -746,7 +746,6 @@
     font-size: 24px;
     word-spacing: -1.5px;
     letter-spacing: 0px;
-    /* margin: 30px auto 0px; */
     margin-top: 30px;
     line-height: 35px;
     white-space: nowrap;
@@ -820,8 +819,23 @@
     }
   }
   @media (max-width: 768px) {
+    width: 90%;
+    gap: 90px;
+    margin: -40px auto 75px;
+
+    > div:nth-of-type(3) {
+      width: 330px;
+      margin-top: 0px;
+    }
   }
   @media (max-width: 480px) {
+    width: 95%;
+    gap: 40px;
+    margin: -45px auto 60px;
+
+    > div:nth-of-type(3) {
+      width: 290px;
+    }
   }
 }
 .lowScreenDivOuter {
@@ -830,6 +844,12 @@
 
   @media (max-width: 992px) {
     display: flex;
+  }
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
+  @media (max-width: 480px) {
+    gap: 17.5px;
   }
 }
 .priceCardDiv {
@@ -845,8 +865,12 @@
     padding: 12.5px 0px 0px;
   }
   @media (max-width: 768px) {
+    border-radius: 8.75px;
+    padding: 11.25px 0px 0px;
   }
   @media (max-width: 480px) {
+    border-radius: 7.5px;
+    padding: 10px 0px 0px;
   }
 }
 .actualMostPopularDiv {
@@ -880,13 +904,35 @@
     }
     > p {
       font-size: 26px;
-      font-weight: 700;
       letter-spacing: -1px;
     }
   }
   @media (max-width: 768px) {
+    gap: 12.5px;
+    margin: 0px auto 11.25px;
+
+    > img {
+      width: 130px;
+    }
+    > p {
+      font-size: 25px;
+      font-weight: 700;
+      word-spacing: -1px;
+    }
   }
   @media (max-width: 480px) {
+    gap: 10px;
+    margin: 0px auto 10px;
+
+    > img {
+      width: 120px;
+    }
+    > p {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -1.5px;
+      word-spacing: -0.5px;
+    }
   }
 }
 .typePriceDiv {
@@ -912,8 +958,26 @@
     }
   }
   @media (max-width: 768px) {
+    width: 92.5%;
+    padding: 6px 0px;
+    border-radius: 7.5px;
+
+    > p {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
   }
   @media (max-width: 480px) {
+    width: 90%;
+    padding: 5px 0px;
+    border-radius: 7px;
+
+    > p {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
   }
 }
 .priceDivs {
@@ -963,8 +1027,6 @@
     height: 90%;
 
     h1 {
-      line-height: 35px;
-      font-weight: 800;
       font-size: 28px;
     }
     hr {
@@ -972,10 +1034,6 @@
       width: 82.5%;
     }
     p {
-      font-weight: 600;
-      font-size: 20px;
-      letter-spacing: -0.5px;
-      word-spacing: -1px;
       margin-top: 5px;
     }
     .boldPriceFeature {
@@ -983,8 +1041,58 @@
     }
   }
   @media (max-width: 768px) {
+    padding: 30px 12.5px 15px;
+    border-radius: 9px;
+    box-shadow: var(--shadowC);
+
+    h1 {
+      line-height: 32.5px;
+      font-weight: 700;
+      font-size: 26px;
+    }
+    hr {
+      margin: 30px auto 27.5px;
+      width: 85%;
+    }
+    p {
+      font-size: 18.5px;
+      margin-top: 0px;
+      font-weight: 500;
+      word-spacing: -0.5px;
+      letter-spacing: -0px;
+    }
+    .boldPriceFeature {
+      font-weight: 700;
+    }
   }
   @media (max-width: 480px) {
+    border-radius: 7px;
+    border: 1px solid var(--blackB);
+    padding: 30px 12.5px 20px;
+    box-shadow: var(--shadowA);
+
+    h1 {
+      line-height: 32.5px;
+      font-weight: 700;
+      font-size: 26px;
+    }
+    hr {
+      margin: 30px auto 27.5px;
+      width: 85%;
+    }
+    p {
+      font-size: 18.5px;
+      margin-top: 0px;
+      font-weight: 500;
+      word-spacing: -0.5px;
+      letter-spacing: -0px;
+    }
+    .combinedPricePtag > span:nth-of-type(2) {
+      margin-top: -12.5px;
+    }
+    .boldPriceFeature {
+      font-weight: 700;
+    }
   }
 }
 .dontLikeOuterDiv {

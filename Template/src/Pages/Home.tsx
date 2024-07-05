@@ -197,7 +197,7 @@ const Home = () => {
         <p>100% Money-Back Guarantee On All Plans.</p>
       </div>
 
-      <div className={css.outerPricingDiv}>
+      {/* <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>
           <div className={css.priceCardDiv}>
             <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
@@ -333,11 +333,11 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
-      {/* <div className={css.dontLikeOuterDiv}>
+      <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
           <h1 style={{ width: "85%" }} className={css.heading}>
@@ -372,13 +372,13 @@ const Home = () => {
             <p>Founder Of Digisurg</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
       <h1 className={css.heading}>Logo Designing Process</h1>
 
-      <div className={css.processOuter}>
+      {/* <div className={css.processOuter}>
         {[
           {
             img: Requirement,
@@ -405,7 +405,7 @@ const Home = () => {
             <p>{processItem?.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
