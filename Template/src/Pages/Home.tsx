@@ -337,7 +337,7 @@ const Home = () => {
 
       <div className={css.dividerB}></div>
 
-      {/* <div className={css.dontLikeOuterDiv}>
+      <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
           <h1 className={css.heading}>What If I Don’t Like The Designs?</h1>
@@ -370,7 +370,7 @@ const Home = () => {
             <p>Founder Of Digisurg</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerB}></div>
 
