@@ -471,7 +471,7 @@ const Home = () => {
 
       <div className={css.dividerB}></div>
 
-      {/* <div className={css.upperFooter}>
+      <div className={css.upperFooter}>
         <h1>Ready To Build A Brand People Remember?</h1>
         <div className={css.getStartedBtn}>START NOW</div>
         <div className={css.featuresDivOuter}>
@@ -488,21 +488,21 @@ const Home = () => {
             <p>Copyright Ownership Transfer</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={css.dividerC}></div>
 
-      {/* <p className={css.footerText}>
+      <p className={css.footerText}>
         This site is not a part of the Facebook website or Facebook Inc.
         Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK
         is a trademark of FACEBOOK, Inc.
-      </p> */}
+      </p>
 
-      {/* <div className={css.footerDiv}>
+      <div className={css.footerDiv}>
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms Of Service</p>
-      </div> */}
+      </div>
     </div>
   );
 };
