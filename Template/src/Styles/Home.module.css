@@ -1583,7 +1583,9 @@
     gap: 50px;
   }
   @media (max-width: 480px) {
-    width: 90%;
+    width: 87.5%;
+    gap: 40px;
+    margin: 35px auto 60px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1644,11 +1646,10 @@
     }
   }
   @media (max-width: 768px) {
-    padding: 20px 7.5px;
     border-radius: 9px;
     box-shadow: var(--shadowB);
     height: 100%;
-    padding: 12.5px 7.5px;
+    padding: 20px 7.5px;
 
     h1 {
       font-weight: 600;
@@ -1669,6 +1670,18 @@
     border-radius: 8px;
     box-shadow: var(--shadowC);
     border: 1px solid var(--blackB);
+
+    h1 {
+      font-weight: 500;
+      font-size: 30px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      margin: 12.5px auto 0px;
+      padding: 0px 10px;
+    }
   }
 }
 .faqOuter {
@@ -1808,6 +1821,28 @@
     }
   }
   @media (max-width: 480px) {
+    border-radius: 8px;
+    padding: 25px 0px 0.5px;
+    margin: 100px auto 250px;
+
+    h1 {
+      font-weight: 600;
+      font-size: 35px;
+      word-spacing: -2px;
+      letter-spacing: -0.5px;
+      margin-top: 30px;
+      line-height: 42.5px;
+    }
+    .getStartedBtn {
+      width: 220px;
+    }
+    .featuresDivOuter {
+      width: 90%;
+
+      > div {
+        align-items: flex-start;
+      }
+    }
   }
 }
 .dividerC {
@@ -1840,6 +1875,7 @@
     line-height: 22.5px;
   }
   @media (max-width: 480px) {
+    width: 90%;
     margin: 40px auto -60px;
     font-size: 14.5px;
     line-height: 20px;
@@ -1861,6 +1897,7 @@
     font-size: 16px;
     letter-spacing: -0.5px;
     word-spacing: -0.5px;
+    cursor: pointer;
   }
 
   @media (max-width: 992px) {
@@ -1875,7 +1912,7 @@
   }
   @media (max-width: 768px) {
     width: 75%;
-    padding: 6px 0px;
+    padding: 7.5px 0px;
     border-radius: 7px;
     margin: 75px auto 45px;
 
@@ -1884,5 +1921,14 @@
     }
   }
   @media (max-width: 480px) {
+    width: 90%;
+    padding: 8px 0px;
+    border-radius: 6px;
+    margin: 75px auto 40px;
+
+    p {
+      font-size: 14.5px;
+      line-height: 18px;
+    }
   }
 }
