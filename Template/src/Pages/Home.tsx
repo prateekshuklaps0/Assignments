@@ -30,7 +30,7 @@ const Home = () => {
         See How an iconic logo Can help your Business Memorable!
       </h1>
 
-      <div className={css.topContDiv}>
+      {/* <div className={css.topContDiv}>
         <div>
           {[
             { text: "2500+ Happy Clients" },
@@ -47,7 +47,7 @@ const Home = () => {
         <div className={css.videoOuterDiv}>
           <PlayArrowIcon />
         </div>
-      </div>
+      </div> */}
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
 
@@ -56,7 +56,7 @@ const Home = () => {
         <p>Rated 4.9 by 2500+ satisfied customers</p>
       </div>
 
-      <div className={css.topBottomContDivOuter}>
+      {/* <div className={css.topBottomContDivOuter}>
         {[
           { text: "Quick Time Around", img: QuickAroundIcon },
           { text: "Free Revisions", img: FreeRevisionsIcon },
@@ -68,7 +68,7 @@ const Home = () => {
             <p>{topBottomCont?.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
@@ -76,7 +76,7 @@ const Home = () => {
 
       <h1 className={css.subHeading}>See what they are saying about Us!</h1>
 
-      <div className={css.testimonialsOuterDiv}>
+      {/* <div className={css.testimonialsOuterDiv}>
         <LeftArrow className={css.arrowsTestimonials} />
         <div className={css.testimonialsCardsHolderDiv}>
           {new Array(2)
@@ -101,7 +101,7 @@ const Home = () => {
             ))}
         </div>
         <RightArrow className={css.arrowsTestimonials} />
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
@@ -116,7 +116,7 @@ const Home = () => {
 
       <div className={css.dividerA}></div>
 
-      <div className={css.categoryHolderDiv}>
+      {/* <div className={css.categoryHolderDiv}>
         {[
           "All",
           "Construction",
@@ -144,11 +144,11 @@ const Home = () => {
             <p>{categoryItem}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
-      <div className={css.cardHolderDivOuter}>
+      {/* <div className={css.cardHolderDivOuter}>
         <div>
           <div className={css.bigCardDiv}></div>
           <div className={css.smallCardDiv}></div>
@@ -161,7 +161,7 @@ const Home = () => {
           <div className={css.bigCardDiv}></div>
           <div className={css.smallCardDiv}></div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
@@ -171,7 +171,7 @@ const Home = () => {
 
       <div className={css.getStartedBtn}>GET STARTED NOW</div>
 
-      <div className={css.featuresDivOuter}>
+      {/* <div className={css.featuresDivOuter}>
         <div>
           <CheckCircleIcon />
           <p>Quick Turnaround</p>
@@ -184,7 +184,7 @@ const Home = () => {
           <CheckCircleIcon />
           <p>Copyright Ownership Transfer</p>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerA}></div>
 
@@ -192,12 +192,12 @@ const Home = () => {
         Logo Design Pricing Suitable For All Sized Businesses
       </h1>
 
-      <div className={css.moneybackContOuter}>
+      {/* <div className={css.moneybackContOuter}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <p>100% Money-Back Guarantee On All Plans.</p>
-      </div>
+      </div> */}
 
-      <div className={css.outerPricingDiv}>
+      {/* <div className={css.outerPricingDiv}>
         <div className={css.lowScreenDivOuter}>
           <div className={css.priceCardDiv}>
             <div style={{ marginTop: "70px" }} className={css.typePriceDiv}>
@@ -333,11 +333,11 @@ const Home = () => {
             <p>1 Digital Visiting Card</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
-      <div className={css.dontLikeOuterDiv}>
+      {/* <div className={css.dontLikeOuterDiv}>
         <img src={MoneyBack2Icon} alt="MoneyBack2Icon" />
         <div>
           <h1 className={css.heading}>What If I Don’t Like The Designs?</h1>
@@ -370,13 +370,13 @@ const Home = () => {
             <p>Founder Of Digisurg</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
       <h1 className={css.heading}>Logo Designing Process</h1>
 
-      <div className={css.processOuter}>
+      {/* <div className={css.processOuter}>
         {[
           {
             img: Requirement,
@@ -403,7 +403,7 @@ const Home = () => {
             <p>{processItem?.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
@@ -411,7 +411,7 @@ const Home = () => {
         Some Exclusive Benefits You Get Only With Us
       </h1>
 
-      <div className={css.benefitsOuter}>
+      {/* <div className={css.benefitsOuter}>
         {[
           {
             head: "Fast Turnaround",
@@ -438,13 +438,13 @@ const Home = () => {
             <p>{benefitItem?.text}</p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
       <h1 className={css.heading}>Frequently Asked Questions</h1>
 
-      <div className={css.faqOuter}>
+      {/* <div className={css.faqOuter}>
         {[
           { ques: "Why should I hire Digisurg?", ans: "" },
           {
@@ -467,11 +467,11 @@ const Home = () => {
             <img src={Plus} alt="Plus" />
           </div>
         ))}
-      </div>
+      </div> */}
 
       <div className={css.dividerB}></div>
 
-      <div className={css.upperFooter}>
+      {/* <div className={css.upperFooter}>
         <h1>Ready To Build A Brand People Remember?</h1>
         <div className={css.getStartedBtn}>START NOW</div>
         <div className={css.featuresDivOuter}>
@@ -488,21 +488,21 @@ const Home = () => {
             <p>Copyright Ownership Transfer</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.dividerC}></div>
 
-      <p className={css.footerText}>
+      {/* <p className={css.footerText}>
         This site is not a part of the Facebook website or Facebook Inc.
         Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK
         is a trademark of FACEBOOK, Inc.
-      </p>
+      </p> */}
 
-      <div className={css.footerDiv}>
+      {/* <div className={css.footerDiv}>
         <p>Privacy Policy</p>
         <p>Refund Policy</p>
         <p>Terms Of Service</p>
-      </div>
+      </div> */}
     </div>
   );
 };
