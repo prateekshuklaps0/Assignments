@@ -1,42 +1,61 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  /* Colors */
+  --textColorA: #ffffff; /* Pure White */
+  --textColorB: #ebebeb;
+  --textColorC: #d5d5d5;
+  --greyA: #565656; /* Charcoal Mist */
+  --greyB: #747474; /* Steel Whisper */
+  --greyC: #9f9f9f; /* Steel Whisper */
+  --greyD: #313030; /* Obsidian Gray */
+
+  /* Backgrounds */
+  --bgA: #0d0628;
+  --bgB: #0f0c29;
+  --bgE: #0f0c293e;
+  --bgC: rgb(12, 53, 106);
+  --bgD: #ff4500;
+  --bgC_glow: rgb(12, 53, 106, 0.6);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+#App {
+  width: 100%;
+  height: 100%;
+  cursor: default;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Scroll Bar Css */
+::-webkit-scrollbar {
+  width: 7.5px;
+  height: 3.5px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+::-webkit-scrollbar-track {
+  background: var(--greyC);
+  border-radius: 50px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+::-webkit-scrollbar-thumb {
+  background: var(--bgC);
+  border-radius: 50px;
+  cursor: pointer;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-scroll {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
   }
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@media (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
 }

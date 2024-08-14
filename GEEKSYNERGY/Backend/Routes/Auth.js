@@ -1,7 +1,9 @@
 const bcrypt = require("bcrypt");
 const express = require("express");
+const jwt = require("jsonwebtoken");
 
 const User = require("../Models/User");
+const { AuthMiddleware } = require("../Controllers/AuthMiddleware");
 
 const AuthRouter = express.Router();
 
@@ -61,7 +63,17 @@ AuthRouter.post("/login", async (req, res) => {
     if (!PasswordMatched)
       return res.status(400).json({ msg: "Invalid email or password" });
 
-    res.status(200).json({ msg: "Login successful" });
+    const token = jwt.sign(
+      {
+        name: user?.name,
+        email: user?.email,
+        phone: user?.phone,
+        profession: user?.profession,
+      },
+      "PRATEEK_TOKEN"
+    );
+
+    res.status(200).json({ msg: "Login successful", token });
   } catch (error) {
     console.log("Login Route Error :", error);
     res.status(500).json({ msg: "Login Route Error", error });
@@ -69,7 +81,7 @@ AuthRouter.post("/login", async (req, res) => {
 });
 
 // Route to List All Users
-AuthRouter.get("/users", async (_, res) => {
+AuthRouter.get("/users", AuthMiddleware, async (_, res) => {
   try {
     const users = await User.find({}, "-password");
     res.status(200).json(users);
@@ -80,7 +92,7 @@ AuthRouter.get("/users", async (_, res) => {
 });
 
 // Update User Details Route
-AuthRouter.put("/update/:id", async (req, res) => {
+AuthRouter.put("/update/:id", AuthMiddleware, async (req, res) => {
   try {
     const { id } = req.params;
     const { name, phone, profession } = req.body;
@@ -101,7 +113,7 @@ AuthRouter.put("/update/:id", async (req, res) => {
 });
 
 // Route to Delete User
-AuthRouter.delete("/delete/:id", async (req, res) => {
+AuthRouter.delete("/delete/:id", AuthMiddleware, async (req, res) => {
   try {
     const { id } = req.params;
 
