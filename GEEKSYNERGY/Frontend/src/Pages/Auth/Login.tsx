@@ -5,10 +5,9 @@ import {
   Is_Error,
   Is_Loading,
   Login_Success,
-  Register_Success,
 } from "../../Redux/AuthSlice";
 
-const API_URL = "http://localhost:8080";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
@@ -17,14 +16,9 @@ import { SetLsData } from "../../Redux/Action";
 const Login = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
-  const name = useAppSelector((state) => state.auth.name);
   const email = useAppSelector((state) => state.auth.email);
-  const profession = useAppSelector((state) => state.auth.profession);
-  const phone = useAppSelector((state) => state.auth.phone);
   const password = useAppSelector((state) => state.auth.password);
   const isLoading = useAppSelector((state) => state.auth.isLoading);
-  const isError = useAppSelector((state) => state.auth.isError);
-  const errorMsg = useAppSelector((state) => state.auth.errorMsg);
 
   // Input Change
   const handleInpChange = (e: React.ChangeEvent<HTMLInputElement>) => {
