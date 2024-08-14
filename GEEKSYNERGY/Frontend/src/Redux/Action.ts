@@ -10,3 +10,8 @@ export const GetLsData = () => {
   const storedData = localStorage.getItem(LocalStorageKey);
   return storedData ? JSON.parse(storedData) : {};
 };
+
+// Delete Data from localStorage
+export const DeleteLsData = () => {
+  localStorage.removeItem(LocalStorageKey);
+};

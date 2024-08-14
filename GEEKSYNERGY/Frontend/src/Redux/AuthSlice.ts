@@ -1,13 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import { GetLsData } from "./Action";
 
 const initialState: any = {
   // Form states
-  name: "",
-  email: "",
-  password: "",
-  phone: "",
-  profession: "",
+  name: GetLsData()?.name || "",
+  email: GetLsData()?.email || "",
+  password: GetLsData()?.password || "",
+  phone: GetLsData()?.phone || "",
+  profession: GetLsData()?.profession || "",
 
   // request states
   isLoading: false,

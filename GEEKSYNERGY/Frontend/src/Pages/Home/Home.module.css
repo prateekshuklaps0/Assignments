@@ -2,10 +2,51 @@
   display: grid;
   place-content: center;
   place-items: center;
-
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
   text-align: center;
 }
+.navOuter {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  margin-bottom: 20px;
 
+  > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    p {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    div {
+      margin: 0;
+      padding: 0;
+      border: 1px solid grey;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+  > button {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 5px 10px;
+  }
+}
+.formOuter {
+  width: 480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
 .codeEditorCss {
   background-color: #2d2d2d;
   color: #f8f8f2;
