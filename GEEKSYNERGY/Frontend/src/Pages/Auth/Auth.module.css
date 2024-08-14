@@ -1,0 +1,12 @@
+.Outer {
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.formOuter {
+  width: 480px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

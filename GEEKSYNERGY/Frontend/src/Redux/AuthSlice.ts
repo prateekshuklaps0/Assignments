@@ -13,6 +13,11 @@ const initialState: any = {
   isLoading: false,
   isError: false,
   errorMsg: "",
+
+  // Home Data
+  isDataLoading: false,
+  isDataError: false,
+  userDataHomepage: [],
 };
 
 export const authSlice = createSlice({
@@ -35,10 +40,35 @@ export const authSlice = createSlice({
     Register_Success: (state) => {
       state.isLoading = false;
     },
+    Login_Success: (state) => {
+      state.isLoading = false;
+    },
+
+    // Home Actions
+    Is_Loading_Home_Data: (state) => {
+      state.isDataLoading = true;
+      state.isDataError = false;
+    },
+    Is_Error_Home_Data: (state) => {
+      state.isDataLoading = false;
+      state.isDataError = true;
+    },
+    Home_Data_Success: (state, action: PayloadAction<any>) => {
+      state.isDataLoading = false;
+      state.userDataHomepage = action.payload.data;
+    },
   },
 });
 
-export const { Change_Inp_Val, Is_Loading, Is_Error, Register_Success } =
-  authSlice.actions;
+export const {
+  Change_Inp_Val,
+  Is_Loading,
+  Is_Error,
+  Register_Success,
+  Login_Success,
+  Is_Loading_Home_Data,
+  Is_Error_Home_Data,
+  Home_Data_Success,
+} = authSlice.actions;
 
 export default authSlice.reducer;

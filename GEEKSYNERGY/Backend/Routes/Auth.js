@@ -3,7 +3,7 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 
 const User = require("../Models/User");
-const { AuthMiddleware } = require("../Controllers/AuthMiddleware");
+const AuthMiddleware = require("../Controllers/AuthMiddleware");
 
 const AuthRouter = express.Router();
 
@@ -72,8 +72,14 @@ AuthRouter.post("/login", async (req, res) => {
       },
       "PRATEEK_TOKEN"
     );
-
-    res.status(200).json({ msg: "Login successful", token });
+    const userData = {
+      name: user?.name,
+      email: user?.email,
+      phone: user?.phone,
+      profession: user?.profession,
+      token: token,
+    };
+    res.status(200).json({ msg: "Login successful", userData });
   } catch (error) {
     console.log("Login Route Error :", error);
     res.status(500).json({ msg: "Login Route Error", error });

@@ -10,9 +10,11 @@ import {
 const API_URL = "http://localhost:8080";
 import axios from "axios";
 import { toast } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const dispatch = useAppDispatch();
+  const navigate = useNavigate();
   const name = useAppSelector((state) => state.auth.name);
   const email = useAppSelector((state) => state.auth.email);
   const profession = useAppSelector((state) => state.auth.profession);
@@ -40,23 +42,25 @@ const Register = () => {
     };
     dispatch(Is_Loading());
     try {
-      const resisterRes = await axios.get(`${API_URL}/`);
-      // const resisterRes = await axios.post(
-      //   `${API_URL}/auth/register`,
-      //   userData
-      // );
-      console.log("resisterRes :", resisterRes?.data);
+      const registerRes = await axios.post(
+        `${API_URL}/auth/register`,
+        userData
+      );
       dispatch(Register_Success());
-    } catch (error) {
-      dispatch(Is_Error({ errorMsg: "Something Went Wrong" }));
-      toast.error("Something Went Wrong");
+      toast.success(registerRes?.data?.msg);
+      navigate("/login");
+      // console.log("Register Response :", registerRes?.data);
+    } catch (error: any) {
+      dispatch(Is_Error({ errorMsg: "" }));
+      toast.error(error?.response?.data?.msg || "Something Went Wrong");
       console.log("Register Error :", error);
     }
   };
 
   return (
     <div className={css.Outer}>
-      <form onSubmit={handleRegister}>
+      <h2>Register</h2>
+      <form onSubmit={handleRegister} className={css.formOuter}>
         <input
           value={name}
           onChange={handleInpChange}
@@ -99,6 +103,7 @@ const Register = () => {
         />
         <button type="submit">{isLoading ? "Registering" : "Register"} </button>
       </form>
+      <Link to="/login">Already Registered? Login</Link>
     </div>
   );
 };

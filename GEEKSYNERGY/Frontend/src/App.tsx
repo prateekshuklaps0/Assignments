@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div id="App.js">
+    <div id="App">
       <Outlet />
     </div>
   );

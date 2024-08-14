@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 
-export const AuthMiddleware = async (req, res, next) => {
-  const { token } = req.headers.authorization;
+const AuthMiddleware = async (req, res, next) => {
+  const token = req.headers.authorization;
   if (!token) return res.status(401).json({ msg: "Access token is required" });
 
   jwt.verify(token, "PRATEEK_TOKEN", (err, user) => {
@@ -14,3 +14,5 @@ export const AuthMiddleware = async (req, res, next) => {
     next();
   });
 };
+
+module.exports = AuthMiddleware;
