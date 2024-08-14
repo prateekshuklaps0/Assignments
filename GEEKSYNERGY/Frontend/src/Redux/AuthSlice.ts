@@ -3,11 +3,11 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: any = {
   // Form states
-  name: "tester1",
-  email: "tester1@g.com",
-  password: "tester123",
-  phone: "987655433214",
-  profession: "tester 1",
+  name: "",
+  email: "",
+  password: "",
+  phone: "",
+  profession: "",
 
   // request states
   isLoading: false,
