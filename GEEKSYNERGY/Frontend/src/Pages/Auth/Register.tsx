@@ -7,7 +7,9 @@ import {
   Register_Success,
 } from "../../Redux/AuthSlice";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+// const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const API_URL = "http://localhost:8080";
+
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";

@@ -1,9 +1,10 @@
 import css from "./Home.module.css";
 import { DeleteLsData, GetLsData } from "../../Redux/Action";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
-
 import { useAppDispatch, useAppSelector } from "../../Redux/Store";
+
+// const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const API_URL = "http://localhost:8080";
 
 import {
   Change_Inp_Val,
